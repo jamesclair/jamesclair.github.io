@@ -1,20 +1,21 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import Layout from '../components/layout'
 
-const ABOUT_ME: string = "About Me"
-const GREETING: string = "Greetings!  My name is Jim Clair"
+const AboutMe: string = "About Me"
+const Greeting: string = "Greetings!  My name is Jim Clair"
 
 const AboutPage = (): JSX.Element => {
     return (
         <main>
-            <h1>{ABOUT_ME}</h1>
-            <Link to="/">Back to Home</Link>
-            <p>{GREETING}</p>
+            <h1></h1>
+            <Layout pageTitle={AboutMe}>
+                <p>{Greeting}</p>
+            </Layout>
         </main>
     )
 }
 
 //TODO: add more meta for SEO
-export const Head = (): JSX.Element => <title>{ABOUT_ME}</title>
+export const Head = (): JSX.Element => <title>{AboutMe}</title>
 
 export default AboutPage
