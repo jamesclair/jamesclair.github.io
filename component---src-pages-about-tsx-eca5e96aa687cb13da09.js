@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmy_gatsby_site=self.webpackChunkmy_gatsby_site||[]).push([[49],{2766:function(e,t,n){n.r(t),n.d(t,{Head:function(){return u}});var l=n(7294),a=n(4160);const r="About Me",u=()=>l.createElement("title",null,r);t.default=()=>l.createElement("main",null,l.createElement("h1",null,r),l.createElement(a.rU,{to:"/"},"Back to Home"),l.createElement("p",null,"Greetings!  My name is Jim Clair"))}}]);
-//# sourceMappingURL=component---src-pages-about-tsx-eca5e96aa687cb13da09.js.map
