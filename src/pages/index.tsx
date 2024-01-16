@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import styled from "styled-components"
 
 
 const IndexPage: React.FC = () => {

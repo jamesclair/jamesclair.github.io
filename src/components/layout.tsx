@@ -1,22 +1,27 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
-import { Container } from '../styles/layout'
+import {
+    StyledLayout,
+    StyledH1,
+    StyledNavLinkItem,
+    StyledNavLink,
+    StyledNavLinksUl,
+} from '../styles/layout'
 
 
 const Layout = ({ pageTitle, children }) => {
     return (
-        <Container>
+        <StyledLayout>
             <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                </ul>
+                <StyledNavLinksUl>
+                    <StyledNavLinkItem><StyledNavLink to="/">Home</StyledNavLink></StyledNavLinkItem>
+                    <StyledNavLinkItem><StyledNavLink to="/about">About</StyledNavLink></StyledNavLinkItem>
+                </StyledNavLinksUl>
             </nav>
             <main>
-                <h1>{pageTitle}</h1>
+                <StyledH1>{pageTitle}</StyledH1>
                 {children}
             </main>
-        </Container>
+        </StyledLayout>
     )
 }
 
