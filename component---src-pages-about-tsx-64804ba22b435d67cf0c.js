@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjimclair=self.webpackChunkjimclair||[]).push([[49],{2766:function(e,t,l){l.r(t),l.d(t,{Head:function(){return r}});var n=l(7294),a=l(2460);const i="About Me",r=()=>n.createElement("title",null,i);t.default=()=>n.createElement("main",null,n.createElement(a.Z,{pageTitle:i},n.createElement("p",null,"Greetings!  My name is Jim Clair")))}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-64804ba22b435d67cf0c.js.map
