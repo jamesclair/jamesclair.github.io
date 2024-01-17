@@ -1,0 +1,33 @@
+
+.container {
+    margin: auto;
+    max-width: 1000px;
+    font-family: sans-serif;
+    justify-content: 'center';
+}
+
+.heading {
+    color: rebeccapurple;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.nav-link-item {
+    padding-right: 2rem;
+}
+.nav-link-text {
+    color: black;
+}
+
+.site-title {
+    font-size: 1rem;
+    color: gray;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
+    text-align: center;
+}

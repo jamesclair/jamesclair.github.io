@@ -7,7 +7,6 @@ const Greeting: string = "Greetings!  My name is Jim Clair"
 const AboutPage = (): JSX.Element => {
     return (
         <main>
-            <h1></h1>
             <Layout pageTitle={AboutMe}>
                 <p>{Greeting}</p>
             </Layout>
