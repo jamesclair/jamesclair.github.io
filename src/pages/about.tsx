@@ -1,17 +1,17 @@
 import * as React from 'react'
-import Layout from '../components/layout'
+import Layout, { LayoutProps } from '../components/layout'
 
 const AboutMe: string = "About Me"
 const Greeting: string = "Greetings!  My name is Jim Clair"
 
 const AboutPage = (): JSX.Element => {
-    return (
-        <main>
-            <Layout pageTitle={AboutMe}>
-                <p>{Greeting}</p>
-            </Layout>
-        </main>
-    )
+  return (
+    <main>
+      <Layout pageTitle={AboutMe}>
+        <p>{Greeting}</p>
+      </Layout>
+    </main>
+  )
 }
 
 //TODO: add more meta for SEO

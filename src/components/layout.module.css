@@ -1,7 +1,6 @@
 
 .container {
     margin: auto;
-    max-width: 1000px;
     font-family: sans-serif;
     justify-content: 'center';
 }
@@ -9,6 +8,12 @@
 .heading {
     color: rebeccapurple;
 }
+
+.s-nav {
+    border-color: #26cced;
+    border-style: solid;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
