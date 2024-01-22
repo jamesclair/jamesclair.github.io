@@ -2,16 +2,22 @@ import React from 'react'
 import ReactDOM from 'react-dom/client';
 import Home from './pages/home';
 import reportWebVitals from './reportWebVitals';
+import './index.scss';
 
 
 // @ts-ignore
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+
+
 root.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>
+  <div data-bs-theme="dark" className="gradient-text">
+    <React.StrictMode>
+      <Home />
+    </React.StrictMode>
+  </div >
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,4 +1,7 @@
 import React from 'react'
+import Alert from 'react-bootstrap/Alert';
+
+import Navigation from '../components/navigation'
 import Layout from '../components/layout'
 
 
@@ -7,7 +10,11 @@ const WelcomeMessage: string = "I'm a professional with over 18 years of softwar
 const Home: React.FC = () => {
     return (
         <main>
-            <Layout pageTitle="Hi, I'm Jim Clair">
+            <Alert variant="warning">
+                This website is under construction, if you stumbled here early please bookmark me and come back for a visit in the near future for more content.
+            </Alert>
+            <Navigation></Navigation>
+            <Layout pageTitle="Hi, I'm Jim Clair" textColor='white'>
                 <p>{WelcomeMessage}</p>
             </Layout>
         </main>

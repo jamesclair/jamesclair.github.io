@@ -1,36 +1,34 @@
-import styles from './layout.module.css'
 import avatar from '../images/ProfilePic.jpg';
 import React, { Component } from 'react';
+import styles from './layout.module.css'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-export type LayoutProps = { pageTitle: string, children: JSX.Element }
-export class Layout extends Component<LayoutProps> {
+export type LayoutProps = { pageTitle: string, textColor: string, children: JSX.Element }
+class Layout extends Component<LayoutProps> {
   render() {
     const { pageTitle, children } = this.props;
     return (
-      <div className={styles.container} style={{}}>
-        <nav className={styles['s-nav']}>
-          <ul className={styles['nav-links']}>
-            <li className={styles['nav-link-item']}><a href="/" className={styles['nav-link-text']}>Home</a></li>
-            <li className={styles['nav-link-item']}><a href="/about" className={styles['nav-link-text']}>About</a></li>
-          </ul>
-        </nav>
-        <div>
-          <>
-            <img
-              alt="My profile picture."
-              src={avatar}
-              width={200}
-              height={250}
-              style={{ borderRadius: '100%' }}
-            />
-            <header className={styles['site-title']}>`This website is under construction!!  If you stumbled here early, please bookmark me and come back for a visit in the near future for more content.`</header>
-          </>
-          <main>
-            <h1 className={styles.heading}>{pageTitle}</h1>
-            {children}
-          </main>
-        </div>
-      </div >
+      <Container>
+        <Row>
+          <Col>
+            <div className={styles.container}>
+              <img
+                alt="My profile picture."
+                src={avatar}
+                width={400}
+              />
+              <main className={styles.header}>
+                <h1>{pageTitle}</h1>
+                <div className={styles.text}>
+                  {children}
+                </div>
+              </main>
+            </div>
+          </Col >
+        </Row >
+      </Container >
     )
   }
 }

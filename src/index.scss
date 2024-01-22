@@ -1,0 +1,13 @@
+// Override default variables before the import
+$enable-gradients: true;
+$body-bg: black;
+
+.gradient-text {
+    background-image: linear-gradient(to right, #8540f4, #703de5, #5b39d5, #4535c5, #2f31b5, #2042bd, #0e51c3, #005ec8, #0083df, #00a5ed, #00c5f5, #5fe4fb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';

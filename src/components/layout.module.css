@@ -1,38 +1,13 @@
-
 .container {
-    margin: auto;
-    font-family: sans-serif;
+    display: flex;
     justify-content: 'center';
-}
-
-.heading {
-    color: rebeccapurple;
-}
-
-.s-nav {
-    border-color: #26cced;
-    border-style: solid;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-}
-.nav-link-item {
-    padding-right: 2rem;
-}
-.nav-link-text {
-    color: black;
-}
-
-.site-title {
-    font-size: 1rem;
-    color: gray;
-    font-weight: 700;
-    display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    width: 200px;
+}
+
+.header {
     text-align: center;
+}
+
+.text {
+    color: rgb(206, 239, 243);
 }
