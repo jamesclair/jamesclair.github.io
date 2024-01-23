@@ -1,14 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
+  Route
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 import Home from './pages/home';
 import Resume from "./pages/resume";
 import './index.scss';
+
+type ExternalRedirectProps = {
+  to: string;
+};
+
+const ExternalRedirect: React.FC<ExternalRedirectProps> = ({ to }) => {
+  useEffect(() => {
+    window.location.href = to;
+  }, [to]);
+
+  return null;
+};
 
 
 const router = createBrowserRouter([
@@ -19,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/resume",
     element: <Resume />,
+  },
+  {
+    path: "/portfolio",
+    element: <ExternalRedirect to="https://github.com/jimclair" />,
   },
 ]);
 
