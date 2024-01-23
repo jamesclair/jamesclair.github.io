@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.c2cdffb6.css",
-    "main.js": "/static/js/main.f2420968.js",
+    "main.js": "/static/js/main.ca20781c.js",
     "static/js/787.86751347.chunk.js": "/static/js/787.86751347.chunk.js",
     "static/media/newZealand.jpg": "/static/media/newZealand.ecf6e33405de37459244.jpg",
     "index.html": "/index.html",
     "main.c2cdffb6.css.map": "/static/css/main.c2cdffb6.css.map",
-    "main.f2420968.js.map": "/static/js/main.f2420968.js.map",
+    "main.ca20781c.js.map": "/static/js/main.ca20781c.js.map",
     "787.86751347.chunk.js.map": "/static/js/787.86751347.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cdffb6.css",
-    "static/js/main.f2420968.js"
+    "static/js/main.ca20781c.js"
   ]
 }
