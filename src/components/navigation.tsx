@@ -13,6 +13,7 @@ function Navigation() {
                         <Nav.Link href="/portfolio">Portfolio</Nav.Link>
                         <Nav.Link href="/resume">Resume</Nav.Link>
                         <Nav.Link href="/blog">Blog</Nav.Link>
+                        <Nav.Link href="/about">About</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

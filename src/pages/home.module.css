@@ -1,0 +1,14 @@
+.welcome-message {
+    text-align: center;
+    /* background-image: linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; */
+}
+
+.welcome-paragraph {
+    /* background-image: linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; */
+}
