@@ -1,23 +1,35 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client';
-import Home from './pages/home';
+import * as ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+
+import Home from './pages/home';
+import Resume from "./pages/resume";
 import './index.scss';
 
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/resume",
+    element: <Resume />,
+  },
+]);
+
 // @ts-ignore
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-
-
-
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <div data-bs-theme="dark" className="gradient-text">
     <React.StrictMode>
-      <Home />
+      <RouterProvider router={router} />
     </React.StrictMode>
-  </div >
+  </div>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
