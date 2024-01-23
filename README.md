@@ -1,6 +1,12 @@
-# Getting Started
+# My Personal Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Public Site: https://jimclair.github.io/
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), styled with bootstrap-react and custom css modules, and routed with react-router.
+
+## UI Component Design
+
+![Initial UI Design](./images/UI-Design.png)
 
 ## Development
 
