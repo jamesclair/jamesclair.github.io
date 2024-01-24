@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 const Resume: React.FC = () => {
     return (
         <Layout>
-            <iframe src="/resume.html" title="Embedded Resume HTML" className={styles['resume-iframe']}>
+            <iframe src="/resume.html" title="Embedded Resume HTML" className={styles['resume-iframe']} sandbox='allow-same-origin'>
                 Your browser does not support iframes and therfore will not be able to view my resume from this page, use the download link above to get the pdf version instead.
             </iframe>
         </Layout>

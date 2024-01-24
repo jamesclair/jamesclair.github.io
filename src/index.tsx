@@ -9,6 +9,7 @@ import reportWebVitals from './reportWebVitals';
 
 import Home from './pages/home';
 import Resume from "./pages/resume";
+import Blog from "./pages/blog"
 import './index.scss';
 
 type ExternalRedirectProps = {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/portfolio",
     element: <ExternalRedirect to="https://github.com/jimclair" />,
+  },
+  {
+    path: "/blog",
+    element: <Blog />,
   },
 ]);
 
