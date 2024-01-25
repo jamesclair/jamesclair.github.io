@@ -12,15 +12,11 @@ class Layout extends Component<LayoutProps> {
     const { children } = this.props;
     return (
       <Container>
-        <Row>
-          <Col>
-            <Alert variant="warning">
-              This website is under construction, if you stumbled here early please bookmark me and come back for a visit in the near future for more content.
-            </Alert>
-            <Navigation></Navigation>
-            {children}
-          </Col >
-        </Row >
+        <Alert variant="warning">
+          This website is under construction, if you stumbled here early please bookmark me and come back for a visit in the near future for more content.
+        </Alert>
+        <Navigation></Navigation>
+        {children}
       </Container >
     )
   }

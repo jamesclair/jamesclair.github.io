@@ -1,33 +1,60 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Markdown from 'react-markdown'
-import article from '../docs/EventProcessingServiceArchitecure.md'
-import resume from '../docs/resume/resume.html'
+import Card from 'react-bootstrap/Card';
 
+import styles from './blog.module.css'
+import '../index.scss'
 import Layout from '../components/layout'
+import MarkdownHeaderComponent from '../components/markdownHeader';
+import MarkdownFirstParagraphComponent from '../components/markdownFirstParagraph';
+import resume from '../docs/resume/resume.html'
+import EventProcessingServiceArchitecture from '../docs/EventProcessingServiceArchitecure.md'
+import Button from 'react-bootstrap/Button';
 
 function createMarkup() {
     return { __html: resume };
 }
 
-
 function Blog() {
     return (
         <Layout>
             <Container>
-                <Row>
+                <Row md={3} >
                     <Col>
-                        <Markdown>{article}</Markdown>
+                        <Card>
+                            <Card.Img variant="top" src="/EventProcessingArchitecture.png" />
+                            <Card.Body>
+                                <MarkdownHeaderComponent mdxContent={EventProcessingServiceArchitecture}></MarkdownHeaderComponent>
+                                <hr></hr>
+                                <MarkdownFirstParagraphComponent mdxContent={EventProcessingServiceArchitecture}></MarkdownFirstParagraphComponent>
+                                <Button variant="outline-info">Go to article</Button>
+                            </Card.Body>
+                        </Card>
                     </Col >
+                    {/* <Col>
+                        <Card style={{ height: '30rem', overflow: 'hidden' }}>
+                            <Card.Img variant="top" src="/EventProcessingArchitecture.png" />
+                            <Card.Body>
+                                <Card.Text as='div'>
+                                    <MarkdownComponent markdownFilePath='/EventProcessingServiceArchitecure.md'></MarkdownComponent>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col > */}
                     <Col>
-                        <div dangerouslySetInnerHTML={createMarkup()} />
-                    </Col >
-                    <Col>
+                        <Card style={{ height: '20rem', overflow: 'hidden' }}>
+                            <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card.Body>
+                                <Card.Text as='span'>
+                                    <p>TBD...</p>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
                     </Col >
                 </Row >
             </Container >
-        </Layout>
+        </Layout >
     );
 }
 
