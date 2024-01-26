@@ -10,6 +10,10 @@ import Home from './pages/home';
 import Resume from "./pages/resume";
 import Blog from "./pages/blog"
 import './index.scss';
+import { hydrate, render } from "react-dom";
+
+
+
 
 type ExternalRedirectProps = {
   to: string;
@@ -43,15 +47,24 @@ const router = createBrowserRouter([
   },
 ]);
 
-// @ts-ignore
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <div data-bs-theme="dark" className="gradient-text">
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
-  </div>
 
-);
+const App = <div data-bs-theme="dark" className="gradient-text">
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+</div>
+
+
+
+const rootElement = document.getElementById("root");
+if (rootElement) {
+  if (rootElement.hasChildNodes()) {
+    hydrate(App, rootElement);
+  } else {
+    render(App, rootElement);
+  }
+}
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
