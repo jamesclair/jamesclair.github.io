@@ -35,10 +35,10 @@ function Navigation() {
                                 <Nav.Link as={Link} to="/about">About</Nav.Link>
                             </Nav>
                             <Nav className="ms-auto">
-                                <Nav.Link href='https://www.linkedin.com/in/jim-clair'>
+                                <Nav.Link href='https://github.com/jimclair'>
                                     <img src={github} alt="Bootstrap" width="35" height="35" style={{ background: 'linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)' }}></img>
                                 </Nav.Link>
-                                <Nav.Link href='https://github.com/jimclair'>
+                                <Nav.Link href='https://www.linkedin.com/in/jim-clair'>
                                     <img src={linkedin} alt="Bootstrap" width="35" height="35" style={{ background: 'linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)' }}></img>
                                 </Nav.Link>
 

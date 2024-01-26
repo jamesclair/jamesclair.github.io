@@ -8,8 +8,11 @@ import reportWebVitals from './reportWebVitals';
 
 import Home from './pages/home';
 import Resume from "./pages/resume";
-import Blog from "./pages/blog"
-import About from "./pages/about"
+import Blog from "./pages/blog";
+import About from "./pages/about";
+
+import BlogArticle from './components/blogArticle';
+
 import './index.scss';
 
 type ExternalRedirectProps = {
@@ -41,6 +44,14 @@ const router = createHashRouter([
   {
     path: "/blog",
     element: <Blog />,
+  },
+  {
+    path: "/eventarchitecture",
+    element: <BlogArticle articleTitle="EventProcessingServiceArchitecture.md" />
+  },
+  {
+    path: "/databasearchitectures",
+    element: <BlogArticle articleTitle="OLAP_OLEP_OLTP_And_DataMeshes.md" />
   },
   {
     path: "/about",

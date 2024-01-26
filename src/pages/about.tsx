@@ -70,10 +70,10 @@ const Resume: React.FC = () => {
                 </div>
                 <h2>Let's Connect</h2>
                 <p style={{ color: 'LightGray' }}>{connectMessage}</p>
-                <a href='https://www.linkedin.com/in/jim-clair'>
+                <a href='https://github.com/jimclair'>
                     <img src={github} alt="Bootstrap" width="60" height="60" style={{ background: 'linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)', marginRight: '10px', marginLeft: '10px' }}></img>
                 </a>
-                <a href='https://github.com/jimclair'>
+                <a href='https://www.linkedin.com/in/jim-clair'>
                     <img src={linkedin} alt="Bootstrap" width="60" height="60" style={{ background: 'linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)', marginRight: '10px', marginLeft: '10px' }}></img>
                 </a>
 

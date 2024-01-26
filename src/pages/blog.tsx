@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 
 import styles from './blog.module.css'
 import '../index.scss'
@@ -9,7 +11,7 @@ import Layout from '../components/layout'
 import MarkdownHeaderComponent from '../components/markdownHeader';
 import MarkdownFirstParagraphComponent from '../components/markdownFirstParagraph';
 import EventProcessingServiceArchitecture from '../docs/EventProcessingServiceArchitecure.md'
-import Button from 'react-bootstrap/Button';
+import OlapOlepOltpAndDataMeshes from '../docs/OLAP_OLEP_OLTP_And_DataMeshes.md'
 
 
 function Blog() {
@@ -24,27 +26,17 @@ function Blog() {
                                 <MarkdownHeaderComponent mdxContent={EventProcessingServiceArchitecture}></MarkdownHeaderComponent>
                                 <hr></hr>
                                 <MarkdownFirstParagraphComponent mdxContent={EventProcessingServiceArchitecture}></MarkdownFirstParagraphComponent>
-                                <Button variant="outline-info">Go to article</Button>
+                                <Button variant="outline-info"><Link to='/eventarchitecture'>Go to Article</Link></Button>
                             </Card.Body>
                         </Card>
                     </Col >
-                    {/* <Col>
-                        <Card style={{ height: '30rem', overflow: 'hidden' }}>
-                            <Card.Img variant="top" src="/EventProcessingArchitecture.png" />
-                            <Card.Body>
-                                <Card.Text as='div'>
-                                    <MarkdownComponent markdownFilePath='/EventProcessingServiceArchitecure.md'></MarkdownComponent>
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col > */}
                     <Col>
-                        <Card style={{ height: '20rem', overflow: 'hidden' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card>
                             <Card.Body>
-                                <Card.Text as='span'>
-                                    <p>TBD...</p>
-                                </Card.Text>
+                                <MarkdownHeaderComponent mdxContent={OlapOlepOltpAndDataMeshes}></MarkdownHeaderComponent>
+                                <hr></hr>
+                                <MarkdownFirstParagraphComponent mdxContent={OlapOlepOltpAndDataMeshes}></MarkdownFirstParagraphComponent>
+                                <Button variant="outline-info"><Link to='/databasearchitectures'>Go to Article</Link></Button>
                             </Card.Body>
                         </Card>
                     </Col >
