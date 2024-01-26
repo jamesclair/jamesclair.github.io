@@ -544,10 +544,6 @@ module.exports = function (webpackEnv) {
               ),
             },
             {
-              test: /\.html$/i,
-              loader: "html-loader",
-            },
-            {
               test: /\.md$/i,
               use: 'raw-loader',
             },
