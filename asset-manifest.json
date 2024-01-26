@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b7586cc.css",
-    "main.js": "/static/js/main.10051892.js",
+    "main.css": "/static/css/main.f357b4ec.css",
+    "main.js": "/static/js/main.5271aed0.js",
     "static/js/787.86751347.chunk.js": "/static/js/787.86751347.chunk.js",
     "static/media/wedding.jpg": "/static/media/wedding.6305e574f3e1f2e1f3eb.jpg",
     "static/media/newZealand.jpg": "/static/media/newZealand.ecf6e33405de37459244.jpg",
@@ -10,12 +10,12 @@
     "static/media/linkedin.svg": "/static/media/linkedin.48c578785988bce75017d928a5dc8a14.svg",
     "index.html": "/index.html",
     "static/media/email.svg": "/static/media/email.b2a8bdc6692ddcdb9d6d67aacd50ac8e.svg",
-    "main.0b7586cc.css.map": "/static/css/main.0b7586cc.css.map",
-    "main.10051892.js.map": "/static/js/main.10051892.js.map",
+    "main.f357b4ec.css.map": "/static/css/main.f357b4ec.css.map",
+    "main.5271aed0.js.map": "/static/js/main.5271aed0.js.map",
     "787.86751347.chunk.js.map": "/static/js/787.86751347.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b7586cc.css",
-    "static/js/main.10051892.js"
+    "static/css/main.f357b4ec.css",
+    "static/js/main.5271aed0.js"
   ]
 }
