@@ -9,6 +9,7 @@ import reportWebVitals from './reportWebVitals';
 import Home from './pages/home';
 import Resume from "./pages/resume";
 import Blog from "./pages/blog"
+import About from "./pages/about"
 import './index.scss';
 
 type ExternalRedirectProps = {
@@ -40,6 +41,10 @@ const router = createHashRouter([
   {
     path: "/blog",
     element: <Blog />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 

@@ -8,13 +8,9 @@ import '../index.scss'
 import Layout from '../components/layout'
 import MarkdownHeaderComponent from '../components/markdownHeader';
 import MarkdownFirstParagraphComponent from '../components/markdownFirstParagraph';
-import resume from '../docs/resume/resume.html'
 import EventProcessingServiceArchitecture from '../docs/EventProcessingServiceArchitecure.md'
 import Button from 'react-bootstrap/Button';
 
-function createMarkup() {
-    return { __html: resume };
-}
 
 function Blog() {
     return (
