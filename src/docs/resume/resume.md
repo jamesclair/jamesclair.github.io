@@ -1,29 +1,61 @@
 <head>
-    <title>Image Row</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
-        .image-row {
-            text-align: center;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 350;
+            font-style: normal;
         }
-        .image-row img {
-            margin: 5px;
-            height: 100px;
+        .image-row {
+            margin: 15px;
+            height: 40px;
+        }
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            background-color: #50AFEC;
+             background: linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)
+        }
+        .banner-header {
+            padding-left: 10px;
+            text-align: left;
+            align-items: center;
+            margin: 0;
+        }
+        .banner-contact-info {
+            margin-right: 15px;
+            margin-top: 20px;
+            color: black; 0px;
+            font-weight: 900;
+            font-size: 11px;
+            text-align: right;
+            align-items: center;
+            display: flex;
+        }
+        .summary {
+            font-weight: 700;
+            font-size: 12px
         }
     </style>
 </head>
-<body style="margin: 0; padding: 0;">
-<div style="font-size: 12px; margin: 0; padding: 0;">
-<div style="display: flex; justify-content: space-between; background-color: #50AFEC;">
-    <div style="padding-left: 10px text-align: left; align-items: center; margin: 0;">
+<body>
+<div class="banner">
+    <div class="banner-header">
         <div style="margin-left: 15px; margin-top: 0;">
         <h2 style="color: #2a2a2a; font-size: 28px; margin-bottom: 0; border-bottom: 0; padding-bottom: 0;">
-            Jim Clair BSCS, CISSP
+            Jim Clair
         </h2>
-        <h3 style="color: #454545; font-size: 24px; margin-top: 0px; border-bottom: 0; padding-top: 0">
-            Cloud Platform Software Engineer
+        <h3 style="color: #454545; font-size: 24px; margin-top: 0px; border-bottom: 0; padding-top: 0; padding-bottom: 10px">
+            Senior Platform Software Engineer
         </h3>
         </div>
     </div>
-    <div style="margin-right: 15px; margin-top: 20px; color: black; 0px; font-weight: 900; font-size: 10px; text-align: right; align-items: center; display: flex;">
+    <div class="banner-contact-info">
         <p>
             Phone: <a href="tel:19136459996" style="color: blue">19136459996</a></br>
             email: <a href="mailto:clair.james88@gmail.com" style="color: blue">clair.james88@gmail.com</a></br>
@@ -33,7 +65,7 @@
     </div>
 </div>
 
-<center style="margin: 15px; height: 40px">
+<center class="image-row">
     <img src="img/python.jpeg" alt="python">
     <img src="img/k8s.png" alt="k8s">
     <img src="img/aws.png" alt="aws">
@@ -47,26 +79,26 @@
     <img src="img/istio.png" alt="istio">
 </center>
 
-<p style="font-weight: bold; font-size: 13px">
+<p class="summary">
 With 18 years of experience in software engineering, operations, and security, I specialize in cloud-native platforms, microservice architectures, enterprise infrastructure, and scalable data pipelines. My background in all aspects of software engineering allows me to drive successful projects and mentor teams to achieve excellence.  Let me shape your cloud architecture to unlock its full potential.
 </p>
 
----
+<div style="font-size: 12px;">
 
-### Professional Experience
+## Professional Experience
 
-#### Senior Software Engineer - Data Platform & Pipeline</br>
-Jul 2023 - Jan 2024; Select Star Inc. (Remote)
+<div>
+    <div style="display: flex; justify-content: space-between;">
+        <h3 style="margin-bottom: 0; margin-top: 0">Senior Platform Software Engineer - Select Star (Remote)</h3>
+        <p style="margin-bottom: 0; margin-top: 0">Jul 2023 - Jan 2024</p>
+    </div>
+</div>
 
-Designing, refactoring, building, securing, and supporting enterprise pipeline and platform with a focus on collection, ingestion, processing, and analysis of data warehouse and business intelligence data.
+Designing, refactoring, building, securing, and supporting enterprise pipeline and platform with a focus on collection, ingestion, processing, and analysis of data warehouse and business intelligence data.<br>
+<strong>Achievements:</strong> Enabled asynchronous and parallel data collection and ingestion. Improved pipeline testability by adding an ingested batch persistence layer.  Introduced the ability to combine multiple parsing engines. Designed foundations of next-gen scalable data pipeline architecture. Up to 700% load-time optimization of multiple web pages backed by SQL.<br>
+<strong>Skills:</strong> <em>Django, Celery, Python, Kubernetes, AWS, Docker, PostgreSQL, Prometheus, Grafana, Sentry, Snowflake, Github Actions, Git, Bash, Terraform, REST, Postman</em>
 
-**Achievements:** Enabled asynchronous and parallel data collection and ingestion. Improve pipeline testability by adding an ingested batch persistence layer.  Introduced the ability to combine multiple parsing engines. Designed foundations of next-gen scalable data pipeline architecture. Up to 700% load-time optimization of multiple web pages backed by SQL.
-
-**Skills:** *Django, Celery, Python, Kubernetes, AWS, Docker, PostgreSQL, Prometheus, Grafana, Sentry, Snowflake, Github Actions, Git, Bash, Terraform, REST, Postman*
-
----
-#### Staff Integration Engineer</br>
-Feb 2023 - Jun 2023; Solv. (Remote)
+#### Staff Integration Engineer - Feb 2023 - Jun 2023; Solv. (Remote)
 
 Led and mentored team in new greenfield development foundations to create a cost-effective and scalable integration platform.
 
@@ -74,9 +106,7 @@ Led and mentored team in new greenfield development foundations to create a cost
 
 **Skills:** *Python, Docker, Heroku, REACT, Grafana, Prometheus, Athena, Sentry, PostgreSQL, Confluence, Jira, Postman, REST, HIPAA, SOC2*
 
----
-#### Tech Lead Cloud Platform Engineering</br>
-Aug 2018 - Sep 2022 - LogRhythm Inc. (Remote)
+#### Tech Lead Cloud Platform Engineering: Aug 2018 - Sep 2022 - LogRhythm Inc. (Remote)
 
 Created, led, and mentored a team of highly skilled engineers while researching, designing, and implementing industry best practice tools and frameworks. Building a cost-effective, highly available and scalable, multi-tenant platform, pipeline, and infrastructure supporting up to a million messages per second.
 
@@ -84,7 +114,6 @@ Created, led, and mentored a team of highly skilled engineers while researching,
 
 **Skills:** *Kubernetes, AWS, Terraform, ArgoCD, Ansible, SQL, Docker, Python, Javascript, Yeoman, Golang, Bash, KubeBuilder, Elastic/Opensearch, Kafka, Strimzi, PostgreSQL, Zalando, Flink, Quarkus, Java, Maven, GitHub Actions, Git, Istio, Vault, Prometheus, Grafana, Loki, Keycloak, Okta, GoPass, External Secrets, Certificates Manager, HAProxy, Jaeger, Pomerium, LogRhythm, \*Nix, Salt, Veracode, REST, Postman, Kiali, Sysdig, Powershell, Jinja, EJS, RegEx, Lets Encrypt, Wireshark, Yarn, Mistnet, Confluence, Jira, Rally, Zero Trust Architecture, SOC2, FedRAMP*
 
----
 #### Cloud DevOps Engineer III</br>
 Jul 2017 - Aug 2018 - LogRhythm Inc. (Hybrid)
 
@@ -94,8 +123,6 @@ Served as LogRhythm product expert on the DevOps team while migrating LogRhythm�
 
 **Skills:** *Google Cloud, Rundeck, LogRhythm,  Ansible, Python, Consul, Telegraph, InfluxDB, Grafana, SQL Server, Elasticsearch, Apache HTTP Server, Salt, Linux, Windows Server, RegEx, Lets Encrypt, Wireshark, Confluence, Jira, REST*
 
----
-
 #### Global Technical Release Manager</br>
 April 2016 - July 2017 - LogRhythm Inc. (Hybrid)
 
@@ -104,8 +131,6 @@ Delivered software to customers and internal teams through the development of re
 **Achievements:** Successfully revived and managed the Global Early Access Beta Program into a cross-organizational effort that incrementally introduced software releases while gaining early feedback and re-establishing customer trust.  Developed FIPS, High Availability, and Disaster Recovery guides for new next-generation deployment architectures.  Created Splunk Integration Guide allowing bulk exportation of data from Splunk to LogRhythm and easing the process of migration from our competitor.  Co-rebuilt the Release Champion Program tripling internal content contributions, improving cross-organizational relationships, and chopping our release cycle down from 1 year to 6 months.  Co-managed over 4 new product launches, 5 major and 23 minor releases.  Authored Threat Intelligence Provider Service and LogRhythm SIEM to CloudAI integration guides.  Continuously provided consultation and optimizations helping to scale beyond the 200k and 300k Messages Per Second benchmarks.  Co-authored and led the tiger team in the creation of a comprehensive Advanced Intelligence Engine best practice guide.  Earned certifications in Project+.
 
 **Skills:** *LogRhythm Advanced Intelligence Engine, Splunk, CloudAI, Windows Server, Elasticsearch, PowerShell, Bash, Python, REST, STIX/TAXII, Postman, FIPS, HIPAA, PCI, NIST CSF, Behavioral Analytics, Threat Intelligence Services, Crystal Reports, C2 Auditing, Alarm and Event Mangagement, Syslog, API collection, database collection, file collection, stream collection, data processing analytics and management*
-
----
 
 #### Enterprise Team Lead & Senior Professional Services Consultant</br>
 October 2014 - March 2016 - LogRhythm Inc. (Boulder, CO)
@@ -117,8 +142,6 @@ Led team that designed, operated, and scaled Security Operations Centers for lar
 
 **Skills:** *LogRhythm, SQL Server, Elasticsearch, Powershell, Bash, Windows Server, Microsoft Access, Excel, FIPS, HIPAA, PCI, NIST CSF, NIST 800-53, ISO 27001, Behavioral Analytics, Crystal Reports, C2 Auditing, Alarm and Event Management, Syslog, API collection, database collection, file collection, stream collection, data processing analytics and management*
 
----
-
 #### SIEM Engineer II</br>
 April 2014 – October 2014 - Fishnet Security Inc. - Overland Park, KS
 
@@ -127,8 +150,6 @@ Administration, onboarding, and security consulting for enterprise customers. Im
 **Achievements:** Co-designed comprehensive SIEM/tool agnostic threat defense framework categorizing customer assets into groups for utilization in threat detection rules, reports, and filtering.  Successfully On-boarded over 12 enterprise SIEM customers each with different architectures, compliances, and use cases.  Earned 2 certifications in LogRhythm.
 
 **Skills:** *LogRhythm, McAfee Nitro, Qradar, IBM Arcsight, SQL Server, compliance consulting, onboarding and integrations, cybersecurity framework creation and implementation, Alarm and Event Management, Syslog, API collection, database collection, file collection, stream collection, data processing analytics and management*
-
----
 
 #### SOC Escalations Engineer</br>
 July 2012 – April 2014 - FISHNET SECURITY INC. - Overland Park, KS
@@ -139,8 +160,6 @@ Supported enterprise customers with a multitude of perimeter security products.
 
 **Skills:** *Checkpoint, Palo Alto, JunOS, F5, Semantec, Cisco, BlueCoat, Fortinet, Crossbeam, Bash, Linux*
 
----
-
 #### Network Security Administrator</br>
 Jan 2011 – Mar 2012 - Pro Air Inc. – Olathe, KS
 
@@ -149,8 +168,6 @@ Small Business Network and Security Administration while attending night school 
 **Achievements:** Earned certifications in networking and hardware.  Graduated New Horizon's Cyber Defender Specialty Bootcamp.
 
 **Skills:** *Cisco, Windows Server, Checkpoint, Microsoft System Center Configuration Manager*
-
----
 
 #### Operations Manager, Systems Administration</br>
 Mar 2007 – Aug 2010 - USMC (Marines) – Miramar, CA
