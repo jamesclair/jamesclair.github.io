@@ -58,7 +58,7 @@
     <div class="banner-contact-info">
         <p>
             Phone: <a href="tel:19136459996" style="color: blue">19136459996</a></br>
-            email: <a href="mailto:clair.james88@gmail.com" style="color: blue">clair.james88@gmail.com</a></br>
+            Email: <a href="mailto:clair.james88@gmail.com" style="color: blue">clair.james88@gmail.com</a></br>
             GitHub: <a href="https://github.com/jimclair" style="color: blue">https://github.com/jimclair</a></br>
             LinkedIn: <a href="https://www.linkedin.com/in/jim-clair" style="color: blue">https://www.linkedin.com/in/jim-clair</a></br>
         </p>
