@@ -41,6 +41,9 @@
             font-weight: 700;
             font-size: 13px
         }
+        table {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -84,6 +87,21 @@ With 18 years of experience in software engineering, operations, and security, I
 </p>
 
 <div style="font-size: 12px;">
+
+<table>
+<tr>
+
+<th>Languages and Frameworks</th>
+<th>Infrastructure and Tools</th>
+
+</tr>
+<tr>
+
+<th>Public Software Projects</th>
+<th>Authored Works</th>
+
+</tr>
+</table>
 
 ## Professional Experience
 
