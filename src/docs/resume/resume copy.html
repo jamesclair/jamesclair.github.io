@@ -6,19 +6,14 @@
         rel="stylesheet">
     <style>
         body {
-            font-family: "Roboto Mono", monospace;
-            font-optical-sizing: auto;
-            font-weight: 350;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
             font-style: normal;
+            font-optical-sizing: auto;
             font-size: 12px;
             max-width: 960px;
             width: 98%;
             margin: auto;
-
-        }
-
-        .body-box {
-            max-width: 960px;
         }
 
         .txt-pad {
@@ -27,15 +22,27 @@
         }
 
         img {
-            height: 40px;
+            height: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
         .imgrow {
-            margin-right: 10%;
-            margin-left: 10%;
-            margin-top: .5%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+        }
+
+        .banner-name {
+            text-align: center;
+            font-weight: 500;
+            font-size: 36px;
+            margin: 0px;
+        }
+
+        .banner-title {
+            font-size: 30px;
+            font-weight: 400;
+            margin: 0px;
         }
 
         .spaced-between {
@@ -47,69 +54,84 @@
             background: linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)
         }
 
-        .banner-header {
-            text-align: left;
-            align-items: center;
+        .banner {
+            text-align: center;
+            vertical-align: center;
         }
 
-        .banner-contact-info {
-            color: black;
-            font-weight: 900;
-            font-size: 11px;
-            text-align: right;
-            align-items: center;
-            display: flex;
+        .banner-content {
+            padding-top: 15px;
+            padding-bottom: 15px;
         }
+
 
         .summary {
             font-weight: 500;
-            font-size: 13px
+            font-size: 13px;
         }
 
-        table-width {
+        table {
             width: 100%;
-            max-width: 960px;
         }
 
         td {
             width: 50%;
             font-size: 11px;
+            text-align: left;
+            vertical-align: top;
+            padding-left: .5%;
+            padding-right: .5%;
         }
     </style>
 </head>
 
 <body>
-    <div class="spaced-between gradient-bg txt-pad">
-        <div class="banner-header">
-            <div>
-                <h2 style="color: #2a2a2a; font-size: 28px; margin-bottom: 0; border-bottom: 0; padding-bottom: 0;">
-                    Jim Clair
-                </h2>
-                <h3
-                    style="color: #454545; font-size: 24px; margin-top: 0px; border-bottom: 0; padding-top: 0; padding-bottom: 10px">
-                    Senior Platform Software Engineer
-                </h3>
+    <div class="banner gradient-bg">
+        <div class="banner-content">
+            <p class="banner-txt-pad banner-name">Jim Clair</p>
+            <p class="banner-txt-pad banner-title">Senior Platform Engineer</p>
+            <div class="banner-img">
+                <div class="imgrow">
+                    <p>
+                        <a href="tel:19136459996">
+                            <img src=../../images/telephone.svg alt="github icon">
+                        </a>
+                        <br>
+                    </p>
+                    <p>
+                        <a href="mailto:clair.james88@gmail.com">
+                            <img src=../../images/email.svg alt="github icon">
+                        </a>
+                        </a>
+                        <br>
+                    </p>
+                    <p>
+                        <a href="https://jimclair.github.io/">
+                            <img src=../../images/globe.svg alt="github icon">
+                        </a>
+                        <br>
+                    </p>
+                    <p>
+                        <a href="https://github.com/jimclair">
+                            <img src=../../images/github.svg alt="github icon">
+                        </a>
+                        <br>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/jim-clair">
+                            <img src=../../images/linkedin.svg alt="github icon">
+                        </a>
+                        <br>
+                    </p>
+                </div>
+
             </div>
         </div>
-        <div class="banner-contact-info">
-            <p>
-                Phone: <a href="tel:19136459996" style="color: blue">19136459996</a></br>
-                Email: <a href="mailto:clair.james88@gmail.com" style="color: blue">clair.james88@gmail.com</a></br>
-                GitHub: <a href="https://github.com/jimclair" style="color: blue">https://github.com/jimclair</a></br>
-                LinkedIn: <a href="https://www.linkedin.com/in/jim-clair"
-                    style="color: blue">https://www.linkedin.com/in/jim-clair</a></br>
-            </p>
-        </div>
+
     </div>
 
-    <div class="imgrow">
-        <img src="img/python.jpeg" alt="python">
-        <img src="img/psql.png" alt="psql">
-        <img src="img/k8s.png" alt="k8s">
-        <img src="img/aws.png" alt="aws">
-        <img src="img/tf.jpeg" alt="tf"">
-        <img src=" img/docker.png" alt="docker">
-    </div>
+
+
 
 
 
@@ -127,6 +149,7 @@
             <th>Skills</th>
             <th>Tools</th>
         </tr>
+
         <tr>
             <td>
                 <p>
@@ -143,6 +166,13 @@
             </td>
             <td>
                 <p>
+                    <strong>Languages and Frameworks:</strong> Python, JavaScipt, Bash, Django, Celery, Java, React,
+                    Golang,
+                    KubeBuilder, Yeoman, FastAPI, Maven, Quarkus, RegEx, Lucene, PromQL, EJS, Jinja, Kustomize, YAML,
+                    XML,
+                    HTML, CSS, JSON, CSV, C++, Powershell
+
+                    <br>
                     <strong>Data and Secrets Management:</strong> PostgreSQL, Elasticsearch, Opensearch, AWS S3,
                     Kafka, Flink, Vault,
                     External Secrets, Etcd, SQL Server, AWS Redshift, Snowflake, Github Secrets, Raft, Consul,
@@ -150,17 +180,26 @@
                 </p>
             </td>
         </tr>
-        <tr class="gradient-bg">
+        <tr class=" gradient-bg">
             <th>Education and Training</th>
             <th>Certifications</th>
         </tr>
         <tr>
             <td>
-                <strong>Western Governor's University</strong> - Bachelor's Degree in Computer Science</br>
-                <strong>Udemy</strong> - Data Science Bootcamp</br>
-                <strong>Coursera</strong> - Architecting w/ GCP</br>
-                <strong>New Horizons Kansas City</strong> - Cyber Defender Specialty Bootcamp</br>
-                <strong>U.S. Marine Corps</strong> - Tactical Data Systems Administration School</br>
+                <strong>Western Governor's University</strong> - Bachelor's Degree in Computer Science
+                <br>
+                <strong>Udemy</strong> - Data Science Bootcamp
+
+                <br>
+                <strong>Coursera</strong> - Architecting w/ GCP
+
+                <br>
+                <strong>New Horizons Kansas City</strong> - Cyber Defender Specialty Bootcamp
+
+                <br>
+                <strong>U.S. Marine Corps</strong> - Tactical Data Systems Administration School
+
+                <br>
             </td>
             <td>
                 CISSP, ITIL Service Management, Microsoft MCSA & MCSE, Project+, Oracle SQL Assoc, CISCO CCNA.
@@ -182,12 +221,14 @@
     <p class="txt-pad">
 
         Designing, refactoring, building, securing, and supporting enterprise pipeline and platform with a focus on
-        collection, ingestion, processing, and analysis of data warehouse and business intelligence data.<br>
+        collection, ingestion, processing, and analysis of data warehouse and business intelligence data.
+        <br>
         <strong>Achievements:</strong> Enabled asynchronous and parallel data collection and ingestion. Improved
         pipeline testability by adding an ingested batch persistence layer. Introduced the ability to combine
         multiple
         parsing engines. Designed foundations of next-gen scalable data pipeline architecture. Up to 700% load-time
-        optimization of multiple web pages backed by SQL.<br>
+        optimization of multiple web pages backed by SQL.
+        <br>
 
     </p>
 
@@ -199,7 +240,8 @@
     <p class="txt-pad">
 
         Led and mentored team in new greenfield development foundations to create a cost-effective and scalable
-        integration platform.<br>
+        integration platform.
+        <br>
 
         <strong>Achievements:</strong> Created unified provisioning bootstrap to serve as the foundations of next
         generation
@@ -218,7 +260,8 @@
 
         Created, led, and mentored a team of highly skilled engineers while researching, designing, and implementing
         industry best practice tools and frameworks. Building a cost-effective, highly available and scalable,
-        multi-tenant platform, pipeline, and infrastructure supporting up to a million messages per second.<br>
+        multi-tenant platform, pipeline, and infrastructure supporting up to a million messages per second.
+        <br>
 
         <strong>Achievements:</strong> Led the technical development of infrastructure for the new Axon cloud-native
         platform
@@ -248,7 +291,8 @@
     <p class="txt-pad">
 
         Served as LogRhythm product expert on the DevOps team while migrating LogRhythm’s core services to a SAAS
-        offering hosted on Google Cloud Platform.<br>
+        offering hosted on Google Cloud Platform.
+        <br>
 
         <strong>Achievements:</strong> Developed de facto reference architecture and sizing guides for new cloud
         service
@@ -269,7 +313,8 @@
         Delivered software to customers and internal teams through the development of release consulting,
         documentation,
         feedback, User Acceptance Testing, and bug management. Served part-time as TierIV escalations engineer
-        contributing improvements and fixes directly to the core product.<br>
+        contributing improvements and fixes directly to the core product.
+        <br>
 
         <strong>Achievements:</strong> Successfully revived and managed the Global Early Access Beta Program into a
         cross-organizational effort that incrementally introduced software releases while gaining early feedback and
@@ -298,7 +343,8 @@
         Led team that designed, operated, and scaled Security Operations Centers for large enterprise customers.
         Overcame some of the company’s toughest projects through carefully crafted solution architectures. Provided
         team
-        management, mentorship, training, and guidance.<br>
+        management, mentorship, training, and guidance.
+        <br>
 
         <strong>Achievements:</strong> Successfully led LogRhythm's largest enterprise deployment consisting of more
         than 30 Data
@@ -325,7 +371,8 @@
 
         Administration, onboarding, and security consulting for enterprise customers. Improved internal integration
         services and aided customers in implementing lasting change in their incident, security, and operational
-        processes.<br>
+        processes.
+        <br>
 
         <strong>Achievements:</strong> Co-designed comprehensive SIEM/tool agnostic threat defense framework
         categorizing
@@ -345,7 +392,8 @@
     </div>
     <p class="txt-pad">
 
-        Supported enterprise customers with a multitude of perimeter security products.<br>
+        Supported enterprise customers with a multitude of perimeter security products.
+        <br>
 
         <strong>Achievements:</strong> Became the sole crossbeam expert and well-known for my firewall kernel
         debugging
@@ -360,7 +408,8 @@
         <p style="margin-bottom: 0; margin-top: 0">Jan 2011 – Mar 2012</p>
     </div>
     <p class="txt-pad">
-        Small Business Network and Security Administration while attending night school for cyber security.<br>
+        Small Business Network and Security Administration while attending night school for cyber security.
+        <br>
 
         <strong>Achievements:</strong>Graduated New Horizon's Cyber Defender
         Specialty Bootcamp and earned a large number of prestigious industry certifications.
@@ -373,7 +422,8 @@
         <p style="margin-bottom: 0; margin-top: 0">Mar 2007 – Aug 2010</p>
     </div>
     <p class="txt-pad">
-        Led a team of systems and network administrators deploying and managing military data systems.<br>
+        Led a team of systems and network administrators deploying and managing military data systems.
+        <br>
         <strong>Achievements:</strong> Earned two Colonel's coins for leading the successful deployment of Service
         Pack 26
         accross the west coast. First cross-regional HA over
@@ -382,46 +432,65 @@
     </p>
     <table>
         <tr class="gradient-bg">
-            <th>Personal Projects</th>
+            <th>Projects</th>
             <th>Authored Works</th>
         </tr>
         <tr>
             <td>
-                <a href=https://github.com/jimclair/ML_Game_Sales_Forecasting>ML Game Sales Prediction</a><br>
-                <a href=https://github.com/jimclair/DeliveryPathFinder>Dijkstra's Delivery Path Finder</a><br>
-                <a href=https://github.com/jimclair/TerraformNginxHADemo>TerraformNginxHADemo</a><br>
-                <a href=https://github.com/jimclair/PokemonsterClientAndAPI>PokemonsterClientAndAPI</a><br>
-                <a href=https://github.com/jimclair/CareerAdvisorBot>AI Career Advice Chatbot</a><br>
-                <a href=https://github.com/jimclair/TeamScheduler>Team Scheduler</a><br>
-                <a href=https://github.com/jimclair/InventorySystem>Inventory System</a><br>
-                <a href=https://github.com/jimclair/StudentRoster>Student Roster</a><br>
                 <a
-                    href=https://github.com/jimclair/portfolio/blob/main/docs/EventProcessingArchitecture.png>EventProcessingArchitecture</a><br>
-            </td>
-            <td>
+                    href=https://github.com/jimclair/portfolio/blob/main/docs/EventProcessingServiceArchitecure.md>EventProcessingServiceArchitecure.md</a>
+                <br>
                 <a
-                    href=https://github.com/jimclair/portfolio/blob/main/docs/EventProcessingServiceArchitecure.md>EventProcessingServiceArchitecure.md</a><br>
-                <a
-                    href=https://github.com/jimclair/portfolio/blob/main/docs/OLAP_OLEP_OLTP_And_DataMeshes.md>OLAP_OLEP_OLTP_And_DataMeshes.md</a><br>
+                    href=https://github.com/jimclair/portfolio/blob/main/docs/OLAP_OLEP_OLTP_And_DataMeshes.md>OLAP_OLEP_OLTP_And_DataMeshes.md</a>
+                <br>
                 <a href=https://docs.logrhythm.com/devices/docs/syslog-splunk>Splunk Integration Guide (authored
-                    original version)</a><br>
+                    original version)</a>
+                <br>
                 <a
                     href=https://docs.logrhythm.com/deploy/7.15.0/logrhythm-reference-architecture#id-(7.15.0)LogRhythmReferenceArchitecture-GoogleCloudPlatformReferenceArchitecture>LRCloud
                     Original Reference Architectures (authored original version)</a>
                 <a href=https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide>Alarm Best
-                    Practices Database and Guide ($3)</a><br>
+                    Practices Database and Guide ($3)</a>
+                <br>
                 <a href=https://docs.logrhythm.com/lrsiem/7.15.0/federal-information-processing-standards-fips>Federal
-                    Information Processing Standards (FIPS) (authored 7.x first version)</a></br>
+                    Information Processing Standards (FIPS) (authored 7.x first version)</a>
+                <br>
                 <a
                     href=https://community.logrhythm.com/t5/Training-and-Reference/Custom-STIX-TAXII-Threat-Provider-feeds/ta-p/20051>Custom
-                    STIX/TAXII Threat Provider feeds (requires community login)</a></br>
+                    STIX/TAXII Threat Provider feeds (requires community login)</a>
+                <br>
                 <a href=https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide>LogRhythm
-                    Diagnostic Module User Guide (authored original version)</a></br>
+                    Diagnostic Module User Guide (authored original version)</a>
+                <br>
                 <a href=https://docs.logrhythm.com/deploy/7.15.0/install-a-logrhythm-ha-dr-combined-solution>Install
-                    a LogRhythm HA + DR Combined Solution (authored 7.x first version)</a> </br>
+                    a LogRhythm HA + DR Combined Solution (authored 7.x first version)</a>
+                <br>
                 <a href=https://community.logrhythm.com/t5/user/viewprofilepage/user-id/1637>184 posts and 24
-                    solutions on LogRhythm Community (requires community login)</a></br>
+                    solutions on LogRhythm Community (requires community login)</a>
+                <br>
             </td>
+            <td>
+                <a href=https://github.com/jimclair/ML_Game_Sales_Forecasting>ML Game Sales Prediction</a>
+                <br>
+                <a href=https://github.com/jimclair/DeliveryPathFinder>Dijkstra's Delivery Path Finder</a>
+                <br>
+                <a href=https://github.com/jimclair/TerraformNginxHADemo>TerraformNginxHADemo</a>
+                <br>
+                <a href=https://github.com/jimclair/PokemonsterClientAndAPI>PokemonsterClientAndAPI</a>
+                <br>
+                <a href=https://github.com/jimclair/CareerAdvisorBot>AI Career Advice Chatbot</a>
+                <br>
+                <a href=https://github.com/jimclair/TeamScheduler>Team Scheduler</a>
+                <br>
+                <a href=https://github.com/jimclair/InventorySystem>Inventory System</a>
+                <br>
+                <a href=https://github.com/jimclair/StudentRoster>Student Roster</a>
+                <br>
+                <a
+                    href=https://github.com/jimclair/portfolio/blob/main/docs/EventProcessingArchitecture.png>EventProcessingArchitecture</a>
+                <br>
+            </td>
+
         </tr>
     </table>
 
