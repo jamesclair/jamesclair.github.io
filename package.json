@@ -154,6 +154,7 @@
   },
   "devDependencies": {
     "@mdx-js/react": "^3.0.0",
+    "html-loader": "^5.0.0",
     "html-react-parser": "^5.1.1",
     "raw-loader": "^4.0.2"
   }

@@ -4,6 +4,7 @@ import styles from './resume.module.css'
 import Layout from '../components/layout'
 
 
+
 const Resume: React.FC = () => {
     return (
         <Layout>
