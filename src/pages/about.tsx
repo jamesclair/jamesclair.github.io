@@ -8,7 +8,7 @@ import phone from "../images/telephone.svg"
 import github from "../images/github.svg"
 
 const welcomeMessage: string = `
-Hi, I'm Jim (or James)!
+Hi, I'm James!
 
 I'm a professional Cloud Platform Software Engineer with a rich journey of over 18 years in the tech industry. My expertise lies in cloud-native platforms, microservice architectures, enterprise infrastructure, and scalable data pipelines. I pride myself on being a problem-solver at heart, always eager to tackle complex challenges and continually learning about new technologies.
 
@@ -70,10 +70,10 @@ const Resume: React.FC = () => {
                 </div>
                 <h2>Let's Connect</h2>
                 <p style={{ color: 'LightGray' }}>{connectMessage}</p>
-                <a href='https://github.com/jimclair'>
+                <a href='https://github.com/jamesclair'>
                     <img src={github} alt="Bootstrap" width="60" height="60" style={{ background: 'linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)', marginRight: '10px', marginLeft: '10px' }}></img>
                 </a>
-                <a href='https://www.linkedin.com/in/jim-clair'>
+                <a href='https://www.linkedin.com/in/james-clair'>
                     <img src={linkedin} alt="Bootstrap" width="60" height="60" style={{ background: 'linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)', marginRight: '10px', marginLeft: '10px' }}></img>
                 </a>
 

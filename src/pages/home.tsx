@@ -11,7 +11,7 @@ const Home: React.FC = () => {
         <Layout>
             <>
                 <div className={styles['welcome-message']}>
-                    <h1>Welcome, I'm Jim Clair</h1>
+                    <h1>Welcome, I'm James Clair</h1>
                 </div>
                 <img
                     alt="A picture of me in New Zealand looking out over a lake made by a glacier."

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "src/index.tsx",
-  "homepage": "https://jimclair.github.io",
+  "homepage": "https://jamesclair.github.io",
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@mdx-js/loader": "^3.0.0",

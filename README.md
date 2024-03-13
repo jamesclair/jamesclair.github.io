@@ -1,6 +1,6 @@
 # My Personal Portfolio Website
 
-Public Site: https://jimclair.github.io/
+Public Site: https://jamesclair.github.io/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), styled with bootstrap-react and custom css modules, and routed with react-router.
 

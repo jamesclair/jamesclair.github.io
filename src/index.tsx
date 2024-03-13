@@ -39,7 +39,7 @@ const router = createHashRouter([
   },
   {
     path: "/portfolio",
-    element: <ExternalRedirect to="https://github.com/jimclair" />,
+    element: <ExternalRedirect to="https://github.com/jamesclair" />,
   },
   {
     path: "/blog",
