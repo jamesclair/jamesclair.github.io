@@ -73,7 +73,7 @@ const Resume: React.FC = () => {
                 <a href='https://github.com/jamesclair'>
                     <img src={github} alt="Bootstrap" width="60" height="60" style={{ background: 'linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)', marginRight: '10px', marginLeft: '10px' }}></img>
                 </a>
-                <a href='https://www.linkedin.com/in/james-clair'>
+                <a href='https://www.linkedin.com/in/jamesclair'>
                     <img src={linkedin} alt="Bootstrap" width="60" height="60" style={{ background: 'linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)', marginRight: '10px', marginLeft: '10px' }}></img>
                 </a>
 
