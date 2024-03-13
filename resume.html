@@ -1,5 +1,5 @@
 <head>
-    <title>Jim Clair's Resume</title>
+    <title>James Clair's Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,9 +28,22 @@
             margin-right: 10px;
         }
 
-        .img-row {
+        .banner-img {
             display: flex;
             justify-content: center;
+        }
+
+        .tool-img-box {
+            margin: 0;
+            padding: 0;
+            display: None;
+            justify-content: space-between;
+        }
+
+        .tool-img {
+            margin: 0;
+            padding: 0;
+            height: 25px;
         }
 
         .banner-name {
@@ -83,50 +96,57 @@
             padding-left: .5%;
             padding-right: .5%;
         }
+
+        .exp-header {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        a:visited {
+            color: blue;
+        }
     </style>
 </head>
 
 <body>
     <div class="banner gradient-bg">
         <div class="banner-content">
-            <p class="banner-txt-pad banner-name">Jim Clair</p>
+            <p class="banner-txt-pad banner-name">James Clair</p>
             <p class="banner-txt-pad banner-title">Senior Platform Engineer</p>
             <div class="banner-img">
-                <div class="img-row">
-                    <p>
-                        <a href="tel:19136459996">
-                            <img src=/img/telephone.svg alt="github icon">
-                        </a>
-                        <br>
-                    </p>
-                    <p>
-                        <a href="mailto:clair.james88@gmail.com">
-                            <img src=/img/email.svg alt="github icon">
-                        </a>
-                        </a>
-                        <br>
-                    </p>
-                    <p>
-                        <a href="https://jimclair.github.io/">
-                            <img src=/img/globe.svg alt="github icon">
-                        </a>
-                        <br>
-                    </p>
-                    <p>
-                        <a href="https://github.com/jimclair">
-                            <img src=/img/github.svg alt="github icon">
-                        </a>
-                        <br>
-                    </p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/jim-clair">
-                            <img src=/img/linkedin.svg alt="github icon">
-                        </a>
-                        <br>
-                    </p>
-                </div>
-
+                <p>
+                    <a href="tel:19136459996">
+                        <img src=./img/telephone.svg alt="github icon">
+                    </a>
+                    <br>
+                </p>
+                <p>
+                    <a href="mailto:clair.james88@gmail.com">
+                        <img src=./img/email.svg alt="github icon">
+                    </a>
+                    </a>
+                    <br>
+                </p>
+                <p>
+                    <a href="https://jamesclair.github.io/">
+                        <img src=./img/globe.svg alt="github icon">
+                    </a>
+                    <br>
+                </p>
+                <p>
+                    <a href="https://github.com/jamesclair">
+                        <img src=./img/github.svg alt="github icon">
+                    </a>
+                    <br>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/james-clair">
+                        <img src=./img/linkedin.svg alt="github icon">
+                    </a>
+                    <br>
+                </p>
             </div>
+
         </div>
 
     </div>
@@ -145,58 +165,73 @@
             <th scope="col">Skills</th>
             <th scope="col">Tools</th>
         </tr>
+        <tr>
+            <td colspan="2" class="tool-img-row">
+                <div class="tool-img-box">
+                    <img src=./img/k8s.png alt="github icon" class="tool-img">
+                    <img src=./img/python.jpeg alt="github icon" class="tool-img">
+                    <img src=./img/aws.png alt="github icon" class="tool-img">
+                    <img src=./img/psql.png alt="github icon" class="tool-img">
+                    <img src=./img/tf.jpeg alt="github icon" class="tool-img">
+                    <img src=./img/argocd.png alt="github icon" class="tool-img">
+                    <img src=./img/gh.png alt="github icon" class="tool-img">
+                    <img src=./img/docker.png alt="github icon" class="tool-img">
+                </div>
+            </td>
+        </tr>
 
         <tr>
             <td>
                 <p>
                     <strong>Development:</strong> Data Modeling/Ingestion/Processing, Data
                     Storage/Retrieval/Reporting/Analytics,
-                    REST APIs, Relational/No-SL Datastores, Enterprise Integration Patterns, Test-Driven
+                    REST APIs, Relational/Non-Relational Datastores, Enterprise Integration Patterns, Test-Driven
                     Dev, Domain-Driven Design, Event-Driven Architectures, Data Mesh Architecture, Kubernetes
                     Operator Dev, CI/CD, Typed Object-Oriented
                     Languages, Self-Service Infra, AuthN & AuthZ Svc(s), 12-Factor App, Bug Mgmt,
-                    Refactoring, Mono-Repo Design, Trunk-based Dev, System Design, Infra and Policy As
-                    Code, SLA/SLO/SLI Definition, Config Mgmt, Data Structures and Algorithms
+                    Refactoring, Mono-Repo Design, Trunk-based Dev, System Design, Infra & Policy As
+                    Code, SLA/SLO/SLI Definition, Config Mgmt, Data Structures & Algorithms
                     <br>
                     <strong>Operations:</strong> Relational/Non-Relational Datastores, Customer Support,
                     Alarm/Log/Event/Metric Mgmt,
-                    Container Orchestration, Technical Docs, Domain and Layer 1-7 Network Design, Risk Mgmt,
+                    Container Orchestration, Technical Docs, Domain & Layer 1-7 Network Design, Risk Mgmt,
                     Business
-                    Intelligence, Object and Block
+                    Intelligence, Object & Block
                     Distributed Storage, Cost Optimization, VPN/Proxy Admin, HA/DR Planning, Scaled Agile Framework,
-                    Capacity Planning, Team and Technical Leadership
+                    Capacity Planning, Team & Technical Leadership
                     <br>
-                    <strong>Security:</strong> Threat Intelligence, Vulnerability Mgmt, Domain and Network Security,
-                    Security Analytics, Dark-Site Mgmt, Federated Authentication and Authorization,
+                    <strong>Security:</strong> Threat Intelligence, Vulnerability Mgmt, Domain & Network Security,
+                    Security Analytics, Dark-Site Mgmt, Federated AuthN & AuthZ,
                     PKI Mgmt, Zero Trust Architecture, Compliance Mgmt
-                    (HIPAA,SOC2,FIPS,PCI,NIST CSF/800-53,ISO 27001), Secrets Mgmt, Static and Run-time Analysis
+                    (HIPAA,SOC2,FIPS,PCI,NIST CSF/800-53,ISO 27001), Secrets Mgmt, Static & Run-time Analysis
 
                 </p>
             </td>
             <td>
                 <p>
-                    <strong>Languages and Frameworks:</strong> Python, SQL, JavaScript, Bash, Django, Celery, Java,
+                    <strong>Languages & Frameworks:</strong> Python, SQL, JavaScript, Bash, Django, Celery, Java,
                     React, Golang, KubeBuilder, Yeoman, FastAPI, Maven, Quarkus, RegEx, Lucene, PromQL, EJS, Jinja,
                     Kustomize, YAML, XML, HTML, CSS, JSON, CSV, C++, Powershell
 
                     <br>
-                    <strong>Data and Secrets Management:</strong> PostgreSQL, Elasticsearch, Opensearch, AWS S3,Kafka,
+                    <strong>Data & Secrets Management:</strong> PostgreSQL, Elasticsearch, Opensearch, AWS S3, Kafka,
                     Flink, Vault, External Secrets, Etcd, SQL Server, AWS Redshift, Snowflake, Github Secrets, Raft,
                     Consul, LogRhythm AIE, GoPass, Oracle, Excel
                     <br>
-                    <strong>Infrastructure and Orchestration:</strong> Kubernetes, AWS (EKS, EC2, Lambda, ECR,
+                    <strong>Infrastructure & Orchestration:</strong> Kubernetes, AWS (EKS, EC2, Lambda, ECR,
                     ControlTower), Terraform, ArgoCD, Kops, Docker, GitHub Actions, Linux, Git, Veracode, Sonarqube,
                     Ansible, Salt, Rundeck, GCP, Windows, SAMBA, VMWare
-                    <br><strong>Networking and Security:</strong> Istio, AWS (ELB, VPC, Route53, IAM, Security Groups,
+                    <br><strong>Networking & Security:</strong> Istio, AWS (ELB, VPC, Route53, IAM, Security Groups,
                     SSO), Keycloak, Okta, Pomerium, Certificates Manager, HAProxy, Apache HTTP, Palo Alto,
                     BlueCoat, Checkpoint, F5, Cisco, Wireshark
-                    <br><strong>Monitoring and Logging:</strong> Grafana, Prometheus, AWS Cloudwatch, Sentry,
-                    StatsD, LogRhythm, Loki, Jaeger, Kiali, AWS Cloudtrail, Sysdig, Status Page, InfluxDB, Telegraf
+                    <br><strong>Monitoring & Logging:</strong> Grafana, Prometheus, AWS Cloudwatch, Sentry,
+                    StatsD, LogRhythm, Loki, Jaeger, Kiali, AWS Cloudtrail, Sysdig, Status Page, InfluxDB, Telegraf,
+                    pager duty, slack
                 </p>
             </td>
         </tr>
         <tr class=" gradient-bg">
-            <th scope="col">Education and Training</th>
+            <th scope="col">Education & Training</th>
             <th scope="col">Certifications</th>
         </tr>
         <tr>
@@ -228,9 +263,9 @@
     <h2 class="gradient-bg txt-pad">Professional Experience</h2>
 
     <div class="txt-pad spaced-between">
-        <h3 style="margin-bottom: 0; margin-top: 0">Senior Platform Software Engineer - Select Star (Remote)
+        <h3 class="exp-header">Senior Platform Software Engineer - Select Star (Remote)
         </h3>
-        <p style="margin-bottom: 0; margin-top: 0">Jul 2023 - Jan 2024</p>
+        <p class="exp-header">Jul 2023 - Jan 2024</p>
     </div>
 
     <p class="txt-pad">
@@ -248,9 +283,9 @@
     </p>
 
     <div class="txt-pad spaced-between">
-        <h3 style="margin-bottom: 0; margin-top: 0">Staff Integration Engineer - Solv (Remote)
+        <h3 class="exp-header">Staff Integration Engineer - Solv (Remote)
         </h3>
-        <p style="margin-bottom: 0; margin-top: 0">Feb 2023 - Jun 2023</p>
+        <p class="exp-header">Feb 2023 - Jun 2023</p>
     </div>
     <p class="txt-pad">
 
@@ -267,9 +302,9 @@
 
 
     <div class="txt-pad spaced-between">
-        <h3 style="margin-bottom: 0; margin-top: 0">Tech Lead of Platform Engineering - LogRhythm (Remote)
+        <h3 class="exp-header">Tech Lead of Platform Engineering - LogRhythm (Remote)
         </h3>
-        <p style="margin-bottom: 0; margin-top: 0">Aug 2018 - Sep 2022</p>
+        <p class="exp-header">Aug 2018 - Sep 2022</p>
     </div>
     <p class="txt-pad">
 
@@ -298,9 +333,9 @@
     </p>
 
     <div class="txt-pad spaced-between">
-        <h3 style="margin-bottom: 0; margin-top: 0">Cloud DevOps Engineer III - LogRhythm (Boulder, CO/Remote)
+        <h3 class="exp-header">Cloud DevOps Engineer III - LogRhythm (Boulder, CO/Remote)
         </h3>
-        <p style="margin-bottom: 0; margin-top: 0">Jul 2017 - Aug 2018</p>
+        <p class="exp-header">Jul 2017 - Aug 2018</p>
     </div>
     <p class="txt-pad">
 
@@ -318,9 +353,9 @@
     </p>
 
     <div class="txt-pad spaced-between">
-        <h3 style="margin-bottom: 0; margin-top: 0">Global Technical Release Manager - LogRhythm (Remote)
+        <h3 class="exp-header">Global Technical Release Manager - LogRhythm (Remote)
         </h3>
-        <p style="margin-bottom: 0; margin-top: 0">April 2016 - July 2017</p>
+        <p class="exp-header">April 2016 - July 2017</p>
     </div>
     <p class="txt-pad">
 
@@ -348,9 +383,9 @@
     </p>
 
     <div class="txt-pad spaced-between">
-        <h3 style="margin-bottom: 0; margin-top: 0">Senior Professional Services Consultant (Boulder, CO)
+        <h3 class="exp-header">Senior Professional Services Consultant (Boulder, CO)
         </h3>
-        <p style="margin-bottom: 0; margin-top: 0">October 2014 - March 2016</p>
+        <p class="exp-header">October 2014 - March 2016</p>
     </div>
     <p class="txt-pad">
 
@@ -377,9 +412,9 @@
     </p>
 
     <div class="txt-pad spaced-between">
-        <h3 style="margin-bottom: 0; margin-top: 0">SIEM Engineer II - Fishnet Security Inc (Overland Park, KS)
+        <h3 class="exp-header">SIEM Engineer II - Fishnet Security Inc (Overland Park, KS)
         </h3>
-        <p style="margin-bottom: 0; margin-top: 0">April 2014 – October 2014</p>
+        <p class="exp-header">April 2014 – October 2014</p>
     </div>
     <p class="txt-pad">
 
@@ -399,10 +434,10 @@
     </p>
 
     <div class="txt-pad spaced-between">
-        <h3 style="margin-bottom: 0; margin-top: 0">SOC Escalations Engineer - Fishnet Security Inc (Overland Park,
+        <h3 class="exp-header">SOC Escalations Engineer - Fishnet Security Inc (Overland Park,
             KS)
         </h3>
-        <p style="margin-bottom: 0; margin-top: 0">July 2012 – April 2014</p>
+        <p class="exp-header">July 2012 – April 2014</p>
     </div>
     <p class="txt-pad">
 
@@ -417,9 +452,9 @@
     </p>
 
     <div class="txt-pad spaced-between">
-        <h3 style="margin-bottom: 0; margin-top: 0">Network Security Administrator - Pro Air Inc (Olathe, KS)
+        <h3 class="exp-header">Network Security Administrator - Pro Air Inc (Olathe, KS)
         </h3>
-        <p style="margin-bottom: 0; margin-top: 0">Jan 2011 – Mar 2012</p>
+        <p class="exp-header">Jan 2011 – Mar 2012</p>
     </div>
     <p class="txt-pad">
         Small Business Network and Security Administration while attending night school for cyber security.
@@ -431,9 +466,9 @@
     </p>
 
     <div class="txt-pad spaced-between">
-        <h3 style="margin-bottom: 0; margin-top: 0">Operations Manager, Systems Administration - USMC (Miramar, CA)
+        <h3 class="exp-header">Operations Manager, Systems Administration - USMC (Miramar, CA)
         </h3>
-        <p style="margin-bottom: 0; margin-top: 0">Mar 2007 – Aug 2010</p>
+        <p class="exp-header">Mar 2007 – Aug 2010</p>
     </div>
     <p class="txt-pad">
         Led a team of systems and network administrators deploying and managing military data systems.
@@ -452,10 +487,10 @@
         <tr>
             <td>
                 <a
-                    href=https://github.com/jimclair/portfolio/blob/main/docs/EventProcessingServiceArchitecure.md>EventProcessingServiceArchitecure.md</a>
+                    href=https://github.com/jamesclair/portfolio/blob/main/docs/EventProcessingServiceArchitecure.md>EventProcessingServiceArchitecure.md</a>
                 <br>
                 <a
-                    href=https://github.com/jimclair/portfolio/blob/main/docs/OLAP_OLEP_OLTP_And_DataMeshes.md>OLAP_OLEP_OLTP_And_DataMeshes.md</a>
+                    href=https://github.com/jamesclair/portfolio/blob/main/docs/OLAP_OLEP_OLTP_And_DataMeshes.md>OLAP_OLEP_OLTP_And_DataMeshes.md</a>
                 <br>
                 <a href=https://docs.logrhythm.com/devices/docs/syslog-splunk>Splunk Integration Guide (authored
                     original version)</a>
@@ -484,21 +519,23 @@
                 <br>
             </td>
             <td>
-                <a href=https://github.com/jimclair/ML_Game_Sales_Forecasting>ML Game Sales Prediction</a>
+                <a href="https://github.com/jamesclair/jamesclair.github.io">My Website</a>
                 <br>
-                <a href=https://github.com/jimclair/DeliveryPathFinder>Dijkstra's Delivery Path Finder</a>
+                <a href=https://github.com/jamesclair/ML_Game_Sales_Forecasting>ML Game Sales Prediction</a>
                 <br>
-                <a href=https://github.com/jimclair/TerraformNginxHADemo>TerraformNginxHADemo</a>
+                <a href=https://github.com/jamesclair/DeliveryPathFinder>Dijkstra's Delivery Path Finder</a>
                 <br>
-                <a href=https://github.com/jimclair/PokemonsterClientAndAPI>PokemonsterClientAndAPI</a>
+                <a href=https://github.com/jamesclair/TerraformNginxHADemo>TerraformNginxHADemo</a>
                 <br>
-                <a href=https://github.com/jimclair/CareerAdvisorBot>AI Career Advice Chatbot</a>
+                <a href=https://github.com/jamesclair/PokemonsterClientAndAPI>PokemonsterClientAndAPI</a>
                 <br>
-                <a href=https://github.com/jimclair/TeamScheduler>Team Scheduler</a>
+                <a href=https://github.com/jamesclair/CareerAdvisorBot>AI Career Advice Chatbot</a>
                 <br>
-                <a href=https://github.com/jimclair/InventorySystem>Inventory System</a>
+                <a href=https://github.com/jamesclair/TeamScheduler>Team Scheduler</a>
                 <br>
-                <a href=https://github.com/jimclair/StudentRoster>Student Roster</a>
+                <a href=https://github.com/jamesclair/InventorySystem>Inventory System</a>
+                <br>
+                <a href=https://github.com/jamesclair/StudentRoster>Student Roster</a>
             </td>
 
         </tr>
