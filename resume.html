@@ -11,7 +11,7 @@
             font-weight: 300;
             font-style: normal;
             font-optical-sizing: auto;
-            font-size: 16px;
+            font-size: 14px;
             max-width: 960px;
             width: 98%;
             margin: auto;
@@ -81,7 +81,7 @@
 
         .summary {
             font-weight: 500;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         table {
@@ -89,8 +89,9 @@
         }
 
         td {
+            font-weight: 300;
             width: 50%;
-            font-size: 15px;
+            font-size: 14px;
             text-align: left;
             vertical-align: top;
             padding-left: .5%;
@@ -105,6 +106,11 @@
         a:visited {
             color: blue;
         }
+
+        .achievements-header {
+            font-weight: 450;
+            font-style: italic;
+        }
     </style>
 </head>
 
@@ -112,7 +118,7 @@
     <div class="banner gradient-bg">
         <div class="banner-content">
             <p class="banner-txt-pad banner-name">James Clair</p>
-            <p class="banner-txt-pad banner-title">Lead Software, Infrastructure, and Security Engineer
+            <p class="banner-txt-pad banner-title">Distributed Software and Enterprise Infrastructure Engineer
             </p>
             <div class="banner-img">
                 <p>
@@ -154,11 +160,12 @@
 
     <p class="summary txt-pad">
         With 18 years of experience in software engineering, operations, and security, I specialize in microservice
-        development, devops, gitops, secops, observability, data management, distributed architecture and scalable
+        development, devops, finops, gitops, secops, observability, data intensive applications, distributed
+        architecture and scalable
         cloud
-        infrastructure. My extensive background in
+        infrastructures. My extensive background in
         all aspects of modern enterprise software allows me to drive successful projects and mentor teams to achieve
-        excellence. Let me shape your cloud architecture to unlock its full potential.
+        excellence. Let me shape your next-gen architecture to unlock its full potential.
     </p>
 
     <table aria-label="Skills, Tools, Education, and Certifications">
@@ -274,7 +281,8 @@
         Designing, refactoring, building, securing, and supporting enterprise pipeline and platform with a focus on
         collection, ingestion, processing, and analysis of data warehouse and business intelligence data.
         <br>
-        <strong>Achievements:</strong> Enabled asynchronous and parallel data collection and ingestion. Improved
+        <span class="achievements-header">Achievements:</span> Enabled asynchronous and parallel data collection and
+        ingestion. Improved
         pipeline testability by adding an ingested batch persistence layer. Introduced the ability to combine
         multiple
         parsing engines. Designed foundations of next-gen scalable data pipeline architecture. Up to 700% load-time
@@ -294,7 +302,8 @@
         integration platform.
         <br>
 
-        <strong>Achievements:</strong> Created unified provisioning bootstrap to serve as the foundations of next
+        <span class="achievements-header">Achievements:</span> Created unified provisioning bootstrap to serve as the
+        foundations of next
         generation
         platform. Partner refactor of Athena scheduling api integrations. Introduced Sentry Cron alerting for long
         running integration jobs.
@@ -303,9 +312,9 @@
 
 
     <div class="txt-pad spaced-between">
-        <h3 class="exp-header">Tech Lead of Platform Engineering - LogRhythm (Remote)
+        <h3 class="exp-header">Tech Lead, Platform Engineering - LogRhythm (Remote/Boulder, CO)
         </h3>
-        <p class="exp-header">Aug 2018 - Sep 2022</p>
+        <p class="exp-header">October 2014 - Sep 2022</p>
     </div>
     <p class="txt-pad">
 
@@ -314,7 +323,8 @@
         multi-tenant platform, pipeline, and infrastructure supporting up to a million messages per second.
         <br>
 
-        <strong>Achievements:</strong> Led the technical development of infrastructure for the new Axon cloud-native
+        <span class="achievements-header">Achievements:</span> Led the technical development of infrastructure for the
+        new Axon cloud-native
         platform over 3.5 years with a public launch in early 2022. Developed comprehensive Kubernetes Operators for
         OpenSearch,
         Flink, and LogRhythm Microservices/Microfrontends. Created a high-performance multi-tenant data pipeline
@@ -329,44 +339,28 @@
         APIs
         and WebUIs through identity federated role-based access. Founded and staffed "Colossus of Cloud", a team of
         highly successful and skilled engineers. Earned my Bachelor's in Computer Science and completed the complete
-        data science bootcamp on Udemy.
-
-    </p>
-
-    <div class="txt-pad spaced-between">
-        <h3 class="exp-header">Cloud DevOps Engineer III - LogRhythm (Boulder, CO/Remote)
-        </h3>
-        <p class="exp-header">Jul 2017 - Aug 2018</p>
-    </div>
-    <p class="txt-pad">
-
-        Served as LogRhythm product expert on the DevOps team while migrating LogRhythm’s core services to a SAAS
+        data science bootcamp on Udemy.<br>
+        <strong>Cloud DevOps Engineer III</strong><br>
+        Served as LogRhythm product expert on the DevOps team while migrating LogRhythm's core services to a SAAS
         offering hosted on Google Cloud Platform.
         <br>
 
-        <strong>Achievements:</strong> Developed de facto reference architecture and sizing guides for new cloud
+        <span class="achievements-header">Achievements:</span> Developed de facto reference architecture and sizing
+        guides for new cloud
         service
         offerings.
         Automated deployment of LogRhythm core services to Google Cloud Compute environment. Earned certifications
         in
-        DevOps foundations, ITIL service management, Oracle SQL, and web development.
-
-    </p>
-
-    <div class="txt-pad spaced-between">
-        <h3 class="exp-header">Global Technical Release Manager - LogRhythm (Remote)
-        </h3>
-        <p class="exp-header">April 2016 - July 2017</p>
-    </div>
-    <p class="txt-pad">
-
+        DevOps foundations, ITIL service management, Oracle SQL, and web development.<br>
+        <strong>Global Technical Release Manager</strong><br>
         Delivered software to customers and internal teams through the development of release consulting,
         documentation,
         feedback, User Acceptance Testing, and bug management. Served part-time as TierIV escalations engineer
         contributing improvements and fixes directly to the core product.
         <br>
 
-        <strong>Achievements:</strong> Successfully revived and managed the Global Early Access Beta Program into a
+        <span class="achievements-header">Achievements:</span> Successfully revived and managed the Global Early Access
+        Beta Program into a
         cross-organizational effort that incrementally introduced software releases while gaining early feedback and
         re-establishing customer trust. Developed FIPS, High Availability, and Disaster Recovery guides for new
         next-generation deployment architectures. Created Splunk Integration Guide allowing bulk exportation of data
@@ -379,24 +373,16 @@
         Continuously provided consultation and optimizations helping to scale beyond the 200k and 300k Messages Per
         Second benchmarks. Co-authored and led the tiger team in the creation of a comprehensive Advanced
         Intelligence
-        Engine best practice guide. Earned certifications in Project+.
-
-    </p>
-
-    <div class="txt-pad spaced-between">
-        <h3 class="exp-header">Senior Professional Services Consultant (Boulder, CO)
-        </h3>
-        <p class="exp-header">October 2014 - March 2016</p>
-    </div>
-    <p class="txt-pad">
-
+        Engine best practice guide. Earned certifications in Project+.<br>
+        <strong>Enterprise Consulting Lead, Professional Services</strong><br>
         Led team that designed, operated, and scaled Security Operations Centers for large enterprise customers.
-        Overcame some of the company’s toughest projects through carefully crafted solution architectures. Provided
+        Overcame some of the company's toughest projects through carefully crafted solution architectures. Provided
         team
         management, mentorship, training, and guidance.
         <br>
 
-        <strong>Achievements:</strong> Successfully led LogRhythm's largest enterprise deployment consisting of more
+        <span class="achievements-header">Achievements:</span> Successfully led LogRhythm's largest enterprise
+        deployment consisting of more
         than 30 Data
         Indexers, 28 Data processors, 4 Platform Managers, 4 Event Managers, 4 Advance Intelligence Engines(AIE), 4
         Metadata, 4 Archival, and 4 Network Monitor servers over the course of a year, reaching record-breaking 100k
@@ -409,13 +395,13 @@
         from hundreds of supported logging sources. Created the TTL Projection Tool to calculate storage usage and
         requirements based on logging rates and average log sizes. Developed and published the Alarm Best Practices
         Database and Guide to provide and maintain recommended steps for pre-defined alarms a customer may receive.
-
     </p>
 
     <div class="txt-pad spaced-between">
-        <h3 class="exp-header">SIEM Engineer II - Fishnet Security Inc (Overland Park, KS)
+        <h3 class="exp-header">Enterprise SIEM Engineer - Fishnet Security Inc (Overland Park,
+            KS)
         </h3>
-        <p class="exp-header">April 2014 – October 2014</p>
+        <p class="exp-header">July 2012 - October 2014</p>
     </div>
     <p class="txt-pad">
 
@@ -424,7 +410,8 @@
         processes.
         <br>
 
-        <strong>Achievements:</strong> Co-designed comprehensive SIEM/tool agnostic threat defense framework
+        <span class="achievements-header">Achievements:</span> Co-designed comprehensive SIEM/tool agnostic threat
+        defense framework
         categorizing
         customer
         assets into groups for utilization in threat detection rules, reports, and filtering. Successfully
@@ -432,36 +419,29 @@
         over 12 enterprise SIEM customers each with different architectures, compliances, and use cases. Earned 2
         certifications in LogRhythm.
 
-    </p>
 
-    <div class="txt-pad spaced-between">
-        <h3 class="exp-header">SOC Escalations Engineer - Fishnet Security Inc (Overland Park,
-            KS)
-        </h3>
-        <p class="exp-header">July 2012 – April 2014</p>
-    </div>
-    <p class="txt-pad">
-
-        Supported enterprise customers with a multitude of perimeter security products.
         <br>
+        <strong>Enterprise Escalations Engineer</strong><br>
+        Supported enterprise customers with a multitude of perimeter security products including high performance
+        firewalls, proxies, VPNs, and endpoint security.<br>
 
-        <strong>Achievements:</strong> Became the sole crossbeam expert and well-known for my firewall kernel
-        debugging
-        expertise.
-        Earned 11 certifications including my CISSP in ISC2, Microsoft, Cisco, Palo Alto, Bluecoat, and Checkpoint.
+        <span class="achievements-header">Achievements:</span> Became the sole crossbeam expert and well-known for
+        firewall kernel debugging expertise.
+        Earned 11 industry leading certifications: CISSP, MCSA, MCSE, CCNA, CNSA,
+        CNSE, BCCPA, BCCPP, CCSA, CCSE, and CCMSE.
 
     </p>
 
     <div class="txt-pad spaced-between">
         <h3 class="exp-header">Network Security Administrator - Pro Air Inc (Olathe, KS)
         </h3>
-        <p class="exp-header">Jan 2011 – Mar 2012</p>
+        <p class="exp-header">Jan 2011 - Mar 2012</p>
     </div>
     <p class="txt-pad">
         Small Business Network and Security Administration while attending night school for cyber security.
         <br>
 
-        <strong>Achievements:</strong>Graduated New Horizon's Cyber Defender
+        <span class="achievements-header">Achievements:</span>Graduated New Horizon's Cyber Defender
         Specialty Bootcamp and earned a large number of prestigious industry certifications.
 
     </p>
@@ -469,12 +449,13 @@
     <div class="txt-pad spaced-between">
         <h3 class="exp-header">Operations Manager, Systems Administration - USMC (Miramar, CA)
         </h3>
-        <p class="exp-header">Mar 2007 – Aug 2010</p>
+        <p class="exp-header">Mar 2007 - Aug 2010</p>
     </div>
     <p class="txt-pad">
         Led a team of systems and network administrators deploying and managing military data systems.
         <br>
-        <strong>Achievements:</strong> Earned two Colonel's coins for leading the successful deployment of Service
+        <span class="achievements-header">Achievements:</span> Earned two Colonel's coins for leading the successful
+        deployment of Service
         Pack 26
         across the west coast. First cross-regional HA over
         SIPRnet VPNs in over four years. Awarded Honor Graduate, Top of Class, Iron Man,
@@ -498,25 +479,26 @@
                 <br>
                 <a
                     href=https://docs.logrhythm.com/deploy/7.15.0/logrhythm-reference-architecture#id-(7.15.0)LogRhythmReferenceArchitecture-GoogleCloudPlatformReferenceArchitecture>LRCloud
-                    Original Reference Architectures (authored original version)</a>
+                    Original Reference Architectures</a>
+                <br>
                 <a href=https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide>Alarm Best
-                    Practices Database and Guide ($3)</a>
+                    Practices Database and Guide</a>
                 <br>
                 <a href=https://docs.logrhythm.com/lrsiem/7.15.0/federal-information-processing-standards-fips>Federal
-                    Information Processing Standards (FIPS) (authored 7.x first version)</a>
+                    Information Processing Standards (FIPS)</a>
                 <br>
                 <a
                     href=https://community.logrhythm.com/t5/Training-and-Reference/Custom-STIX-TAXII-Threat-Provider-feeds/ta-p/20051>Custom
-                    STIX/TAXII Threat Provider feeds (requires community login)</a>
+                    STIX/TAXII Threat Provider feeds</a>
                 <br>
                 <a href=https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide>LogRhythm
-                    Diagnostic Module User Guide (authored original version)</a>
+                    Diagnostic Module User Guide</a>
                 <br>
                 <a href=https://docs.logrhythm.com/deploy/7.15.0/install-a-logrhythm-ha-dr-combined-solution>Install
-                    a LogRhythm HA + DR Combined Solution (authored 7.x first version)</a>
+                    a LogRhythm HA + DR Combined Solution</a>
                 <br>
                 <a href=https://community.logrhythm.com/t5/user/viewprofilepage/user-id/1637>184 posts and 24
-                    solutions on LogRhythm Community (requires community login)</a>
+                    solutions LR Community (requires login)</a>
                 <br>
             </td>
             <td>
