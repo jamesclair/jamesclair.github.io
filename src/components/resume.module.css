@@ -1,12 +1,13 @@
-body {
+.body-container {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-optical-sizing: auto;
     font-size: 14px;
-    max-width: 960px;
     width: 98%;
     margin: auto;
+    background-color: white;
+    color: black;
 }
 
 .txt-pad {
@@ -14,7 +15,7 @@ body {
     padding-right: .5%;
 }
 
-img {
+.resume-img {
     height: 30px;
     margin-left: 10px;
     margin-right: 10px;
@@ -74,13 +75,15 @@ img {
 .summary {
     font-weight: 500;
     font-size: 16px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-table {
+.resume-table {
     width: 100%;
 }
 
-td {
+.resume-td {
     font-weight: 300;
     width: 50%;
     font-size: 14px;
@@ -90,12 +93,14 @@ td {
     padding-right: .5%;
 }
 
+.resume-th {}
+
 .exp-header {
     margin-bottom: 0;
     margin-top: 0;
 }
 
-a:visited {
+.resume-link {
     color: blue;
 }
 

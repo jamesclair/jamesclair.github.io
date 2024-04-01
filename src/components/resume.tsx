@@ -12,40 +12,40 @@ class Resume extends Component {
     render() {
         return (
             <Layout>
-                <div>
-                    <div className={styles['banner gradient-bg']}>
+                <div className={styles['body-container']}>
+                    <div className={`${styles['banner']} ${styles['gradient-bg']}`}>
                         <div className={styles['banner-content']}>
-                            <p className={styles['banner-txt-pad banner-name']}>James Clair</p>
-                            <p className={styles['banner-txt-pad banner-title']}>Distributed Software and Enterprise Infrastructure Engineer
+                            <p className={`${styles['banner-txt-pad']} ${styles['banner-name']}`}>James Clair</p>
+                            <p className={`${styles['banner-txt-pad']} ${styles['banner-title']}`}>Distributed Software and Enterprise Infrastructure Engineer
                             </p>
                             <div className={styles['banner-img']}>
                                 <p>
-                                    <Link to="tel:19136459996">
-                                        <img src={BannerImg} alt="telephone icon"></img>
+                                    <Link className={styles['resume-link']} to="tel:19136459996">
+                                        <img className={styles['resume-img']} src={BannerImg} alt="telephone icon"></img>
                                     </Link>
                                     <br></br>
                                 </p>
                                 <p>
-                                    <Link to="mailto:clair.james88@gmail.com">
-                                        <img src={Email} alt="email icon"></img>
+                                    <Link className={styles['resume-link']} to="mailto:clair.james88@gmail.com">
+                                        <img className={styles['resume-img']} src={Email} alt="email icon"></img>
                                     </Link>
                                     <br></br>
                                 </p>
                                 <p>
-                                    <Link to="https://jamesclair.github.io/">
-                                        <img src={Globe} alt="website icon"></img>
+                                    <Link className={styles['resume-link']} to="https://jamesclair.github.io/">
+                                        <img className={styles['resume-img']} src={Globe} alt="website icon"></img>
                                     </Link>
                                     <br></br>
                                 </p>
                                 <p>
-                                    <Link to="https://github.com/jamesclair">
-                                        <img src={Github} alt="github icon"></img>
+                                    <Link className={styles['resume-link']} to="https://github.com/jamesclair">
+                                        <img className={styles['resume-img']} src={Github} alt="github icon"></img>
                                     </Link>
                                     <br></br>
                                 </p>
                                 <p>
-                                    <Link to="https://www.linkedin.com/in/jamesclair">
-                                        <img src={Linkedin} alt="github icon"></img>
+                                    <Link className={styles['resume-link']} to="https://www.linkedin.com/in/jamesclair">
+                                        <img className={styles['resume-img']} src={Linkedin} alt="github icon"></img>
                                     </Link>
                                     <br></br>
                                 </p >
@@ -53,17 +53,17 @@ class Resume extends Component {
                         </div >
                     </div >
 
-                    <p className={styles['summary txt-pad']}>
+                    <p className={`${styles['summary']} ${styles['txt-pad']}`}>
                         With 18 years of experience in software engineering, operations, and security, I specialize in microservice development, devops, finops, gitops, secops, observability, data intensive applications, distributed architecture and scalable cloud infrastructures. My extensive background in all aspects of modern enterprise software allows me to drive successful projects and mentor teams to achieve excellence. Let me shape your next-gen architecture to unlock its full potential.
                     </p>
 
-                    <table aria-label="Skills, Tools, Education, and Certifications">
+                    <table className={styles['resume-table']} aria-label="Skills, Tools, Education, and Certifications">
                         <tr className={styles['gradient-bg']}>
                             <th scope="col">Skills</th>
                             <th scope="col">Tools</th>
                         </tr>
                         <tr>
-                            <td>
+                            <td className={styles['resume-td']}>
                                 <p>
                                     <strong>Development:</strong> Data Modeling/Ingestion/Processing, Data Storage/Retrieval/Reporting/Analytics, REST APIs, Relational/Non-Relational Datastores, Enterprise Integration Patterns, Test-Driven Dev, Domain-Driven Design, Event-Driven Architectures, Data Mesh Architecture, Kubernetes Operator Dev, CI/CD, Typed Object-Oriented Languages, Self-Service Infra, AuthN & AuthZ Svc(s), 12-Factor App, Bug Mgmt, Refactoring, Mono-Repo Design, Trunk-based Dev, System Design, Infra & Policy As Code, SLA/SLO/SLI Definition, Config Mgmt, Data Structures & Algorithms
                                     <br></br>
@@ -72,7 +72,7 @@ class Resume extends Component {
                                     <strong>Security:</strong> Threat Intelligence, Vulnerability Mgmt, Domain & Network Security, Security Analytics, Dark-Site Mgmt, Federated AuthN & AuthZ, PKI Mgmt, Zero Trust Architecture, Compliance Mgmt (HIPAA,SOC2,FIPS,PCI,NIST CSF/800-53,ISO 27001), Secrets Mgmt, Static & Run-time Analysis
                                 </p>
                             </td>
-                            <td>
+                            <td className={styles['resume-td']}>
                                 <p>
                                     <strong>Languages & Frameworks:</strong> Python, SQL, JavaScript, Bash, Django, Celery, Java, React, Golang, KubeBuilder, Yeoman, FastAPI, Maven, Quarkus, RegEx, Lucene, PromQL, EJS, Jinja, Kustomize, YAML, XML, HTML, CSS, JSON, CSV, C++, Powershell
 
@@ -87,12 +87,12 @@ class Resume extends Component {
                                 </p >
                             </td >
                         </tr >
-                        <tr className={styles[' gradient-bg']}>
+                        <tr className={`${styles['']} ${styles['gradient-bg']}`}>
                             <th scope="col">Education & Training</th>
                             <th scope="col">Certifications</th>
                         </tr>
                         <tr>
-                            <td>
+                            <td className={styles['resume-td']}>
                                 <strong>Western Governor's University</strong>-Bachelor's Degree in Computer Science
                                 <br></br>
                                 <strong>Udemy</strong>-Data Science Bootcamp
@@ -104,15 +104,15 @@ class Resume extends Component {
                                 <strong>U.S. Marine Corps</strong>-Tactical Data Systems Administration School
                                 <br></br>
                             </td>
-                            <td>
+                            <td className={styles['resume-td']}>
                                 CISSP, ITIL Service Management, Microsoft MCSA & MCSE, Project+, Oracle SQL Assoc, CISCO CCNA. DevOps Foundations, CIW HTML5/CSS3, Net+, A+, Palo Alto CNSE & CNSA, Bluecoat BCCA & BCCP, Checkpoint CCMSE & CCSA & CCSE, LogRhythm LCDE & LCP, Marines Tactical Data Systems Administrator
                             </td>
                         </tr>
                     </table>
 
-                    <h2 className={styles['gradient-bg txt-pad']}>Professional Experience</h2>
+                    <h2 className={`${styles['gradient-bg']} ${styles['txt-pad']}`}>Professional Experience</h2>
 
-                    <div className={styles['txt-pad spaced-between']}>
+                    <div className={`${styles['txt-pad']} ${styles['spaced-between']}`}>
                         <h3 className={styles['exp-header']}>Senior Platform Software Engineer-Select Star (Remote)
                         </h3>
                         <p className={styles['exp-header']}>Jul 2023-Jan 2024</p>
@@ -124,7 +124,7 @@ class Resume extends Component {
                         <br></br>
                     </p >
 
-                    <div className={styles['txt-pad spaced-between']}>
+                    <div className={`${styles['txt-pad']} ${styles['spaced-between']}`}>
                         <h3 className={styles['exp-header']}>Staff Integration Engineer-Solv (Remote)
                         </h3>
                         <p className={styles['exp-header']}>Feb 2023-Jun 2023</p>
@@ -134,7 +134,7 @@ class Resume extends Component {
                         <span className={styles['achievements-header']}>Achievements:</span> Created unified provisioning bootstrap to serve as the foundations of next generation platform.Partner refactor of Athena scheduling api integrations.Introduced Sentry Cron alerting for long running integration jobs.
                     </p >
 
-                    <div className={styles['txt-pad spaced-between']}>
+                    <div className={`${styles['txt-pad']} ${styles['spaced-between']}`}>
                         <h3 className={styles['exp-header']}>Tech Lead, Platform Engineering-LogRhythm (Remote/Boulder, CO)</h3>
                         <p className={styles['exp-header']}>October 2014-Sep 2022</p>
                     </div>
@@ -161,7 +161,7 @@ class Resume extends Component {
                         <span className={styles['achievements-header']}>Achievements:</span> Successfully led LogRhythm's largest enterprise deployment consisting of more than 30 Data Indexers, 28 Data processors, 4 Platform Managers, 4 Event Managers, 4 Advance Intelligence Engines(AIE), 4 Metadata, 4 Archival, and 4 Network Monitor servers over the course of a year, reaching record-breaking 100k and 150k Messages Per Second(MPS) ingestion benchmarks.Significantly reduced correlation gaps in Advanced Intelligence Engine for customers exceeding 90k MPS limit by developing a framework for routing events to the proper Engine on a per use -case basis.Invented the Data Dictionary to help customers categorize parsed metadata from hundreds of supported logging sources.Created the TTL Projection Tool to calculate storage usage and requirements based on logging rates and average log sizes.Developed and published the Alarm Best Practices Database and Guide to provide and maintain recommended steps for pre-defined alarms a customer may receive.
                     </p >
 
-                    <div className={styles['txt-pad spaced-between']}>
+                    <div className={`${styles['txt-pad']} ${styles['spaced-between']}`}>
                         <h3 className={styles['exp-header']}>Enterprise SIEM Engineer-Fishnet Security Inc (Overland Park, KS)
                         </h3>
                         <p className={styles['exp-header']}>July 2012-October 2014</p>
@@ -178,7 +178,7 @@ class Resume extends Component {
                         <br></br>
                         <span className={styles['achievements-header']}>Achievements:</span> Became the sole crossbeam expert and well-known for firewall kernel debugging expertise. Earned 11 industry leading certifications: CISSP, MCSA, MCSE, CCNA, CNSA, CNSE, BCCPA, BCCPP, CCSA, CCSE, and CCMSE.
                     </p >
-                    <div className={styles['txt-pad spaced-between']}>
+                    <div className={`${styles['txt-pad']} ${styles['spaced-between']}`}>
                         <h3 className={styles['exp-header']}>Network Security Administrator-Pro Air Inc (Olathe, KS)
                         </h3>
                         <p className={styles['exp-header']}>Jan 2011-Mar 2012</p>
@@ -188,7 +188,7 @@ class Resume extends Component {
                         <br></br>
                         <span className={styles['achievements-header']}>Achievements:</span>Graduated New Horizon's Cyber Defender Specialty Bootcamp and earned a large number of prestigious industry certifications.
                     </p >
-                    <div className={styles['txt-pad spaced-between']}>
+                    <div className={`${styles['txt-pad']} ${styles['spaced-between']}`}>
                         <h3 className={styles['exp-header']}>Operations Manager, Systems Administration-USMC (Miramar, CA)
                         </h3>
                         <p className={styles['exp-header']}>Mar 2007-Aug 2010</p>
@@ -198,52 +198,52 @@ class Resume extends Component {
                         <br></br>
                         <span className={styles['achievements-header']}>Achievements:</span> Earned two Colonel's coins for leading the successful deployment of Service Pack 26 across the west coast.First cross-regional HA over SIPRnet VPNs in over four years.Awarded Honor Graduate, Top of Class, Iron Man, and Meritorious MAST.
                     </p >
-                    <table aria-label="Projects and Authored Works">
+                    <table className={styles['resume-table']} aria-label="Projects and Authored Works">
                         <tr className={styles['gradient-bg']}>
                             <th scope="col">Authored Works</th>
                             <th scope="col">Projects</th>
                         </tr>
                         <tr>
-                            <td>
-                                <Link to="https://github.com/jamesclair/portfolio/blob/main/docs/EventProcessingServiceArchitecure.md">EventProcessingServiceArchitecure.md</Link>
+                            <td className={styles['resume-td']}>
+                                <Link className={styles['resume-link']} to="https://github.com/jamesclair/portfolio/blob/main/docs/EventProcessingServiceArchitecure.md">EventProcessingServiceArchitecure.md</Link>
                                 <br></br>
-                                <Link to="https://github.com/jamesclair/portfolio/blob/main/docs/OLAP_OLEP_OLTP_And_DataMeshes.md">OLAP_OLEP_OLTP_And_DataMeshes.md</Link>
+                                <Link className={styles['resume-link']} to="https://github.com/jamesclair/portfolio/blob/main/docs/OLAP_OLEP_OLTP_And_DataMeshes.md">OLAP_OLEP_OLTP_And_DataMeshes.md</Link>
                                 <br></br>
-                                <Link to="https://docs.logrhythm.com/devices/docs/syslog-splunk">Splunk Integration Guide (authored original version)</Link>
+                                <Link className={styles['resume-link']} to="https://docs.logrhythm.com/devices/docs/syslog-splunk">Splunk Integration Guide (authored original version)</Link>
                                 <br></br>
-                                <Link to="https://docs.logrhythm.com/deploy/7.15.0/logrhythm-reference-architecture#id-(7.15.0)LogRhythmReferenceArchitecture-GoogleCloudPlatformReferenceArchitecture">LRCloud Original Reference Architectures</Link>
+                                <Link className={styles['resume-link']} to="https://docs.logrhythm.com/deploy/7.15.0/logrhythm-reference-architecture#id-(7.15.0)LogRhythmReferenceArchitecture-GoogleCloudPlatformReferenceArchitecture">LRCloud Original Reference Architectures</Link>
                                 <br></br>
-                                <Link to="https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide">Alarm Best Practices Database and Guide</Link>
+                                <Link className={styles['resume-link']} to="https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide">Alarm Best Practices Database and Guide</Link>
                                 <br></br>
-                                <Link to="https://docs.logrhythm.com/lrsiem/7.15.0/federal-information-processing-standards-fips">Federal Information Processing Standards (FIPS)</Link>
+                                <Link className={styles['resume-link']} to="https://docs.logrhythm.com/lrsiem/7.15.0/federal-information-processing-standards-fips">Federal Information Processing Standards (FIPS)</Link>
                                 <br></br>
-                                <Link to="https://community.logrhythm.com/t5/Training-and-Reference/Custom-STIX-TAXII-Threat-Provider-feeds/ta-p/20051">Custom STIX /TAXII Threat Provider feeds</Link>
+                                <Link className={styles['resume-link']} to="https://community.logrhythm.com/t5/Training-and-Reference/Custom-STIX-TAXII-Threat-Provider-feeds/ta-p/20051">Custom STIX /TAXII Threat Provider feeds</Link>
                                 <br></br>
-                                <Link to="https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide">LogRhythm Diagnostic Module User Guide</Link>
+                                <Link className={styles['resume-link']} to="https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide">LogRhythm Diagnostic Module User Guide</Link>
                                 <br></br>
-                                <Link to="https://docs.logrhythm.com/deploy/7.15.0/install-a-logrhythm-ha-dr-combined-solution">Install a LogRhythm HA + DR Combined Solution</Link>
+                                <Link className={styles['resume-link']} to="https://docs.logrhythm.com/deploy/7.15.0/install-a-logrhythm-ha-dr-combined-solution">Install a LogRhythm HA + DR Combined Solution</Link>
                                 <br></br>
-                                <Link to="https://community.logrhythm.com/t5/user/viewprofilepage/user-id/1637">184 posts and 24 solutions LR Community (requires login)</Link>
+                                <Link className={styles['resume-link']} to="https://community.logrhythm.com/t5/user/viewprofilepage/user-id/1637">184 posts and 24 solutions LR Community (requires login)</Link>
                                 <br></br>
                             </td >
-                            <td>
-                                <Link to="https://github.com/jamesclair/jamesclair.github.io">My Website</Link>
+                            <td className={styles['resume-td']}>
+                                <Link className={styles['resume-link']} to="https://github.com/jamesclair/jamesclair.github.io">My Website</Link>
                                 <br></br>
-                                <Link to="https://github.com/jamesclair/ML_Game_Sales_Forecasting">ML Game Sales Prediction</Link>
+                                <Link className={styles['resume-link']} to="https://github.com/jamesclair/ML_Game_Sales_Forecasting">ML Game Sales Prediction</Link>
                                 <br></br>
-                                <Link to="https://github.com/jamesclair/DeliveryPathFinder">Dijkstra's Delivery Path Finder</Link>
+                                <Link className={styles['resume-link']} to="https://github.com/jamesclair/DeliveryPathFinder">Dijkstra's Delivery Path Finder</Link>
                                 <br></br>
-                                <Link to="https://github.com/jamesclair/TerraformNginxHADemo">TerraformNginxHADemo</Link>
+                                <Link className={styles['resume-link']} to="https://github.com/jamesclair/TerraformNginxHADemo">TerraformNginxHADemo</Link>
                                 <br></br>
-                                <Link to="https://github.com/jamesclair/PokemonsterClientAndAPI">PokemonsterClientAndAPI</Link>
+                                <Link className={styles['resume-link']} to="https://github.com/jamesclair/PokemonsterClientAndAPI">PokemonsterClientAndAPI</Link>
                                 <br></br>
-                                <Link to="https://github.com/jamesclair/CareerAdvisorBot">AI Career Advice Chatbot</Link>
+                                <Link className={styles['resume-link']} to="https://github.com/jamesclair/CareerAdvisorBot">AI Career Advice Chatbot</Link>
                                 <br></br>
-                                <Link to="https://github.com/jamesclair/TeamScheduler">Team Scheduler</Link>
+                                <Link className={styles['resume-link']} to="https://github.com/jamesclair/TeamScheduler">Team Scheduler</Link>
                                 <br></br>
-                                <Link to="https://github.com/jamesclair/InventorySystem">Inventory System</Link>
+                                <Link className={styles['resume-link']} to="https://github.com/jamesclair/InventorySystem">Inventory System</Link>
                                 <br></br>
-                                <Link to="https://github.com/jamesclair/StudentRoster">Student Roster</Link>
+                                <Link className={styles['resume-link']} to="https://github.com/jamesclair/StudentRoster">Student Roster</Link>
                             </td>
                         </tr>
                     </table >
