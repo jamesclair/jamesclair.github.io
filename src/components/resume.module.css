@@ -1,0 +1,105 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    max-width: 960px;
+    width: 98%;
+    margin: auto;
+}
+
+.txt-pad {
+    padding-left: .5%;
+    padding-right: .5%;
+}
+
+img {
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+}
+
+.tool-img-box {
+    margin: 0;
+    padding: 0;
+    display: None;
+    justify-content: space-between;
+}
+
+.tool-img {
+    margin: 0;
+    padding: 0;
+    height: 25px;
+}
+
+.banner-name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0px;
+}
+
+.banner-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.spaced-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gradient-bg {
+    background: linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)
+}
+
+.banner {
+    text-align: center;
+    vertical-align: center;
+}
+
+.banner-content {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+.summary {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    font-weight: 300;
+    width: 50%;
+    font-size: 14px;
+    text-align: left;
+    vertical-align: top;
+    padding-left: .5%;
+    padding-right: .5%;
+}
+
+.exp-header {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+a:visited {
+    color: blue;
+}
+
+.achievements-header {
+    font-weight: 450;
+    font-style: italic;
+}

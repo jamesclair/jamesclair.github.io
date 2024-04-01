@@ -7,7 +7,7 @@ import {
 import reportWebVitals from './reportWebVitals';
 
 import Home from './pages/home';
-import Resume from "./pages/resume";
+import ResumeComponent from "./pages/resume";
 import Blog from "./pages/blog";
 import About from "./pages/about";
 
@@ -35,7 +35,7 @@ const router = createHashRouter([
   },
   {
     path: "/resume",
-    element: <Resume />,
+    element: <ResumeComponent />,
   },
   {
     path: "/portfolio",
