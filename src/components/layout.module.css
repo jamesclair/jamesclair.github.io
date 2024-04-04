@@ -1,0 +1,21 @@
+@media print {
+    .navigation-box {
+        display: none !important;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .container-box {
+        /* display: none !important; */
+        padding: 0;
+        margin: 0;
+        width: 1500px;
+        max-width: 1500px;
+    }
+}
+
+.container-box {
+    max-width: 1500px;
+    width: 1500px;
+}

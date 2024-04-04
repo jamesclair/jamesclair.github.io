@@ -2,18 +2,51 @@
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-optical-sizing: auto;
+    /* font-optical-sizing: auto; */
     font-size: 14px;
-    width: 98%;
-    margin: auto;
+    width: 100%;
+    margin: 0;
     background-color: white;
     color: black;
 }
 
-.txt-pad {
-    padding-left: .5%;
-    padding-right: .5%;
+@media print {
+    .body-container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        /* max-width: max-content; */
+        /* box-sizing: max-content; */
+    }
+
+    body {
+        max-width: max-content;
+        width: max-content;
+        margin: 0;
+        padding: 0;
+        box-sizing: max-content;
+        display: contents;
+    }
+
+    .edu-table {
+        column-count: 2;
+        column-fill: balance-all;
+        text-align: center;
+    }
+
+    .cert-table {
+        column-count: 4;
+        column-fill: balance-all;
+        text-align: center;
+    }
+
+    .content-table {
+        column-count: 3;
+        column-fill: balance-all;
+        text-align: center;
+    }
 }
+
 
 .resume-img {
     height: 30px;
@@ -24,26 +57,16 @@
 .banner-img {
     display: flex;
     justify-content: center;
-}
-
-.tool-img-box {
-    margin: 0;
-    padding: 0;
-    display: None;
-    justify-content: space-between;
-}
-
-.tool-img {
-    margin: 0;
-    padding: 0;
-    height: 25px;
+    align-items: center;
+    padding-bottom: 9px;
 }
 
 .banner-name {
     text-align: center;
     font-weight: 500;
     font-size: 36px;
-    margin: 0px;
+    padding-top: 9px;
+    margin: 0;
 }
 
 .banner-title {
@@ -58,7 +81,9 @@
 }
 
 .gradient-bg {
-    background: linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)
+    background: linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd);
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .banner {
@@ -67,15 +92,12 @@
 }
 
 .banner-content {
-    padding-top: 15px;
-    padding-bottom: 10px;
+    line-height: 45px;
 }
-
 
 .summary {
     font-weight: 500;
     font-size: 16px;
-    margin-bottom: 1rem;
     margin-top: 1rem;
 }
 
@@ -88,16 +110,25 @@
     width: 50%;
     font-size: 14px;
     text-align: left;
-    vertical-align: top;
     padding-left: .5%;
     padding-right: .5%;
 }
 
-.resume-th {}
+
+.section-header {
+    text-align: center;
+    vertical-align: center;
+    font-size: 22px;
+    padding: 3px;
+    font-weight: 500;
+}
 
 .exp-header {
     margin-bottom: 0;
     margin-top: 0;
+    /* font-weight: 500; */
+    padding-left: 1.5%;
+    padding-right: 1.5%;
 }
 
 .resume-link {
@@ -105,6 +136,50 @@
 }
 
 .achievements-header {
-    font-weight: 450;
+    font-weight: 600;
     font-style: italic;
+}
+
+strong {
+    font-weight: 600;
+}
+
+p {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+
+.edu-table {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    column-fill: balance-all;
+    text-align: center;
+}
+
+.cert-table {
+    -webkit-column-count: 4;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 4;
+    /* Firefox */
+    column-count: 4;
+    column-fill: balance-all;
+    text-align: center;
+}
+
+.content-table {
+    -webkit-column-count: 3;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 3;
+    /* Firefox */
+    column-count: 3;
+    column-fill: balance-all;
+    text-align: center;
+}
+
+h6 {
+    font-size: 19px
 }
