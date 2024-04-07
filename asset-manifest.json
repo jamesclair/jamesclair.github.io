@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.971abdbc.css",
-    "main.js": "/static/js/main.854005d6.js",
+    "main.css": "/static/css/main.ea559b59.css",
+    "main.js": "/static/js/main.ee997cf7.js",
     "static/js/787.86751347.chunk.js": "/static/js/787.86751347.chunk.js",
     "static/media/wedding.jpg": "/static/media/wedding.6305e574f3e1f2e1f3eb.jpg",
     "static/media/newZealand.jpg": "/static/media/newZealand.ecf6e33405de37459244.jpg",
+    "static/media/globe.svg": "/static/media/globe.50876e43933815577489131385e62e6d.svg",
     "static/media/telephone.svg": "/static/media/telephone.b4a626c77be92a1af23a3d8f7a3f77a6.svg",
     "index.html": "/index.html",
     "static/media/github.svg": "/static/media/github.a2dcecaacdba94077f71818776dd805b.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.48c578785988bce75017d928a5dc8a14.svg",
     "static/media/email.svg": "/static/media/email.b2a8bdc6692ddcdb9d6d67aacd50ac8e.svg",
-    "main.971abdbc.css.map": "/static/css/main.971abdbc.css.map",
-    "main.854005d6.js.map": "/static/js/main.854005d6.js.map",
+    "main.ea559b59.css.map": "/static/css/main.ea559b59.css.map",
+    "main.ee997cf7.js.map": "/static/js/main.ee997cf7.js.map",
     "787.86751347.chunk.js.map": "/static/js/787.86751347.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.971abdbc.css",
-    "static/js/main.854005d6.js"
+    "static/css/main.ea559b59.css",
+    "static/js/main.ee997cf7.js"
   ]
 }
