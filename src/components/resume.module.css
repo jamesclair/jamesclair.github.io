@@ -183,3 +183,7 @@ p {
 h6 {
     font-size: 19px
 }
+
+.column {
+    text-align: center;
+}

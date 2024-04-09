@@ -8,6 +8,10 @@ import Globe from './img/globe.svg'
 import Github from './img/github.svg'
 import Linkedin from './img/linkedin.svg'
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 class Resume extends Component {
     render() {
         return (
@@ -58,7 +62,7 @@ class Resume extends Component {
                         </p>
                         <h4 className={`${styles['gradient-bg']} ${styles['section-header']}`}> Professional Experience</h4>
                         <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Senior Platform Software Engineer-Select Star (Remote)
+                            <h6 className={styles['exp-header']}>Senior Platform Software Engineer - Select Star (Remote)
                             </h6>
                             <p className={styles['exp-header']}>Jul 2023-Jan 2024</p>
                         </div>
@@ -71,7 +75,7 @@ class Resume extends Component {
                         </p >
 
                         <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Staff Integration Engineer-Solv (Remote)
+                            <h6 className={styles['exp-header']}>Staff Integration Engineer - Solv (Remote)
                             </h6>
                             <p className={styles['exp-header']}>Feb 2023-Jun 2023</p>
                         </div>
@@ -82,7 +86,7 @@ class Resume extends Component {
                         </p >
 
                         <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Tech Lead, Platform Engineering-LogRhythm (Remote/Boulder, CO)</h6>
+                            <h6 className={styles['exp-header']}>Tech Lead, Platform Engineering - LogRhythm (Remote/Boulder, CO)</h6>
                             <p className={styles['exp-header']}>October 2014-Sep 2022</p>
                         </div>
                         <p>
@@ -110,7 +114,7 @@ class Resume extends Component {
                         </p >
 
                         <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Enterprise SIEM Engineer-Fishnet Security Inc (Overland Park, KS)
+                            <h6 className={styles['exp-header']}>Enterprise SIEM Engineer - Fishnet Security Inc (Overland Park, KS)
                             </h6>
                             <p className={styles['exp-header']}>July 2012-October 2014</p>
                         </div>
@@ -127,7 +131,7 @@ class Resume extends Component {
                             <span className={styles['achievements-header']}>Achievements:</span> Became the sole crossbeam expert and well-known for firewall kernel debugging expertise. Earned 11 industry leading certifications: CISSP, MCSA, MCSE, CCNA, CNSA, CNSE, BCCPA, BCCPP, CCSA, CCSE, and CCMSE.
                         </p >
                         <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Network Security Administrator-Pro Air Inc (Olathe, KS)
+                            <h6 className={styles['exp-header']}>Network Security Administrator - Pro Air Inc (Olathe, KS)
                             </h6>
                             <p className={styles['exp-header']}>Jan 2011-Mar 2012</p>
                         </div>
@@ -137,7 +141,7 @@ class Resume extends Component {
                             <span className={styles['achievements-header']}>Achievements:</span>Graduated New Horizon's Cyber Defender Specialty Bootcamp and earned a large number of prestigious industry certifications.
                         </p >
                         <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Operations Manager, Systems Administration-USMC (Miramar, CA)
+                            <h6 className={styles['exp-header']}>Operations Manager, Systems Administration - USMC (Miramar, CA)
                             </h6>
                             <p className={styles['exp-header']}>Mar 2007-Aug 2010</p>
                         </div>
@@ -168,66 +172,89 @@ class Resume extends Component {
                             <strong>Monitoring & Logging:</strong> Grafana, Prometheus, AWS Cloudwatch, Sentry, StatsD, LogRhythm, Loki, Jaeger, Kiali, AWS Cloudtrail, Sysdig, Status Page, InfluxDB, Telegraf, pager duty, slack
                         </p >
                         <h4 className={`${styles['gradient-bg']} ${styles['section-header']}`}>Education & Training</h4>
-                        <div className={`${styles['edu-table']} ${styles['txt-pad']}`}>
-                            <div><strong>Western Governor's University</strong> - Bachelor's Degree in Computer Science</div>
-                            <div><strong>Udemy</strong> - Data Science Bootcamp</div>
-                            <div><strong>Coursera</strong> - Architecting w / GCP</div>
-                            <div><strong>New Horizons Kansas City</strong> - Cyber Defender Specialty Bootcamp</div>
-                            <div><strong>U.S. Marine Corps</strong> - Tactical Data Systems Administration School</div>
-                        </div>
+                        <Container fluid>
+                            <Row>
+                                <Col className={styles['column']} md>
+                                    <div><strong>Western Governor's University</strong> - Bachelor's Degree in Computer Science</div>
+                                    <div><strong>Udemy</strong> - Data Science Bootcamp</div>
+                                    <div><strong>Coursera</strong> - Architecting w / GCP</div>
+                                </Col>
+                                <Col className={styles['column']} md>
+                                    <div><strong>New Horizons Kansas City</strong> - Cyber Defender Specialty Bootcamp</div>
+                                    <div><strong>U.S. Marine Corps</strong> - Tactical Data Systems Administration School</div>
+                                </Col>
+                            </Row>
+                        </Container>
+
                         <h4 className={`${styles['gradient-bg']} ${styles['section-header']}`}>Certifications</h4>
-                        <div className={`${styles['cert-table']} ${styles['txt-pad']}`}>
-                            <div>CISSP</div>
-                            <div>ITIL Service Mgmt</div>
-                            <div>Microsoft MCSA & MCSE</div>
-                            <div>Project +</div>
-                            <div>Oracle SQL Assoc</div>
-                            <div>CISCO CCNA</div>
-                            <div>DevOps Foundations</div>
-                            <div>CIW HTML5 / CSS3</div>
-                            <div>Net +</div>
-                            <div>A +</div>
-                            <div>Palo Alto CNSE & CNSA</div>
-                            <div>Bluecoat BCCA & BCCP</div>
-                            <div>Checkpoint CCMSE & CCSA & CCSE</div>
-                            <div>LogRhythm LCDE & LCP</div>
-                            <div>Tactical Data Systems Admin</div>
-                        </div>
+                        <Container fluid>
+                            <Row>
+                                <Col className={styles['column']} sm>
+                                    <div>CISSP</div>
+                                    <div>ITIL Service Mgmt</div>
+                                    <div>Microsoft MCSA & MCSE</div>
+                                    <div>Project +</div>
+                                    <div>Oracle SQL Assoc</div>
+                                </Col>
+                                <Col className={styles['column']} sm>
+                                    <div>CISCO CCNA</div>
+                                    <div>DevOps Foundations</div>
+                                    <div>CIW HTML5 / CSS3</div>
+                                    <div>Net +</div>
+                                    <div>A +</div>
+                                </Col>
+                                <Col className={styles['column']} sm>
+                                    <div>Palo Alto CNSE & CNSA</div>
+                                    <div>Bluecoat BCCA & BCCP</div>
+                                    <div>Checkpoint CCMSE & CCSA & CCSE</div>
+                                    <div>LogRhythm LCDE & LCP</div>
+                                    <div>Tactical Data Systems Admin</div>
+                                </Col>
+                            </Row>
+                        </Container>
 
                         <h4 className={`${styles['gradient-bg']} ${styles['section-header']}`}>Authored Works</h4>
-                        <div className={`${styles['content-table']} ${styles['txt-pad']}`}>
-                            <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/portfolio/blob/main/docs/EventProcessingServiceArchitecure.md">EventProcessingServiceArchitecure.md</Link></div>
-                            <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/portfolio/blob/main/docs/OLAP_OLEP_OLTP_And_DataMeshes.md">OLAP_OLEP_OLTP_And_DataMeshes.md</Link></div>
-                            <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/devices/docs/syslog-splunk">Splunk Integration Guide (authored original version)</Link></div>
-                            <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/deploy/7.15.0/logrhythm-reference-architecture#id-(7.15.0)LogRhythmReferenceArchitecture-GoogleCloudPlatformReferenceArchitecture">LRCloud Original Reference Architectures</Link></div>
-                            <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide">Alarm Best Practices Database and Guide</Link></div>
-                            <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/lrsiem/7.15.0/federal-information-processing-standards-fips">Federal Information Processing Standards (FIPS)</Link></div>
-                            <div><Link className={styles['resume-link']} to="https://community.logrhythm.com/t5/Training-and-Reference/Custom-STIX-TAXII-Threat-Provider-feeds/ta-p/20051">Custom STIX /TAXII Threat Provider feeds</Link></div>
-                            <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide">LogRhythm Diagnostic Module User Guide</Link></div>
-                            <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/deploy/7.15.0/install-a-logrhythm-ha-dr-combined-solution">Install a LogRhythm HA + DR Combined Solution</Link></div>
-                            <div><Link className={styles['resume-link']} to="https://community.logrhythm.com/t5/user/viewprofilepage/user-id/1637">184 posts and 24 solutions LR Community (requires login)</Link></div>
-                        </div>
+                        <Container fluid>
+                            <Row>
+                                <Col className={styles['column']} lg>
+                                    <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/portfolio/blob/main/docs/EventProcessingServiceArchitecure.md">EventProcessingServiceArchitecure.md</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/portfolio/blob/main/docs/OLAP_OLEP_OLTP_And_DataMeshes.md">OLAP_OLEP_OLTP_And_DataMeshes.md</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/devices/docs/syslog-splunk">Splunk Integration Guide</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/deploy/7.15.0/logrhythm-reference-architecture#id-(7.15.0)LogRhythmReferenceArchitecture-GoogleCloudPlatformReferenceArchitecture">LRCloud Original Reference Architectures</Link></div>
+                                </Col>
+                                <Col className={styles['column']} lg>
+                                    <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide">Alarm Best Practices Database and Guide</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/lrsiem/7.15.0/federal-information-processing-standards-fips">Federal Information Processing Standards (FIPS)</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://community.logrhythm.com/t5/Training-and-Reference/Custom-STIX-TAXII-Threat-Provider-feeds/ta-p/20051">Custom STIX /TAXII Threat Provider feeds</Link></div>
+                                </Col>
+                                <Col className={styles['column']} lg>
+                                    <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/kbmodules/docs/logrhythm-diagnostic-module-user-guide">LogRhythm Diagnostic Module User Guide</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://docs.logrhythm.com/deploy/7.15.0/install-a-logrhythm-ha-dr-combined-solution">Install a LogRhythm HA + DR Combined Solution</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://community.logrhythm.com/t5/user/viewprofilepage/user-id/1637">184 posts and 24 solutions LR Community</Link></div>
+                                </Col>
+                            </Row>
+                        </Container>
+
                         <h4 className={`${styles['gradient-bg']} ${styles['section-header']}`}>Projects</h4>
-                        <div className={`${styles['content-table']} ${styles['txt-pad']}`}>
-                            <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/jamesclair.github.io">Portfolio Website</Link></div>
-
-                            <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/ML_Game_Sales_Forecasting">ML Game Sales Prediction</Link></div>
-
-                            <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/DeliveryPathFinder">Dijkstra's Delivery Path Finder</Link></div>
-
-                            <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/TerraformNginxHADemo">TerraformNginxHADemo</Link></div>
-
-                            <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/PokemonsterClientAndAPI">PokemonsterClientAndAPI</Link></div>
-
-                            <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/CareerAdvisorBot">AI Career Advice Chatbot</Link></div>
-
-                            <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/TeamScheduler">Team Scheduler</Link></div>
-
-                            <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/InventorySystem">Inventory System</Link></div>
-
-                            <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/StudentRoster">Student Roster</Link></div>
-                        </div>
-
+                        <Container fluid>
+                            <Row>
+                                <Col className={styles['column']} md>
+                                    <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/jamesclair.github.io">Portfolio Website</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/ML_Game_Sales_Forecasting">ML Game Sales Prediction</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/DeliveryPathFinder">Dijkstra's Delivery Path Finder</Link></div>
+                                </Col>
+                                <Col className={styles['column']} md>
+                                    <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/TerraformNginxHADemo">TerraformNginxHADemo</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/PokemonsterClientAndAPI">PokemonsterClientAndAPI</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/CareerAdvisorBot">AI Career Advice Chatbot</Link></div>
+                                </Col>
+                                <Col className={styles['column']} md>
+                                    <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/TeamScheduler">Team Scheduler</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/InventorySystem">Inventory System</Link></div>
+                                    <div><Link className={styles['resume-link']} to="https://github.com/jamesclair/StudentRoster">Student Roster</Link></div>
+                                </Col>
+                            </Row>
+                        </Container>
                     </div>
                     <br></br>
                     <br></br>
