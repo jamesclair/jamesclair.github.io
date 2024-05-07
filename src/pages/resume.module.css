@@ -1,8 +1,5 @@
 @media print {
     .resume-page {
-        /* margin: 0;
-        padding: 0;
-        background-color: white; */
         width: max-content;
         max-width: max-content;
     }

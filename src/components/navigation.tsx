@@ -32,7 +32,6 @@ function Navigation() {
                                 <Nav.Link as={Link} to="/portfolio">Portfolio</Nav.Link>
                                 <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
                                 <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
-                                <Nav.Link as={Link} to="/about">About</Nav.Link>
                             </Nav>
                             <Nav className="ms-auto">
                                 <Nav.Link href='https://github.com/jamesclair'>

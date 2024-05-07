@@ -9,7 +9,6 @@ import reportWebVitals from './reportWebVitals';
 import Home from './pages/home';
 import ResumeComponent from "./pages/resume";
 import Blog from "./pages/blog";
-import About from "./pages/about";
 
 import BlogArticle from './components/blogArticle';
 
@@ -52,10 +51,6 @@ const router = createHashRouter([
   {
     path: "/databasearchitectures",
     element: <BlogArticle articleTitle="OLAP_OLEP_OLTP_And_DataMeshes.md" />
-  },
-  {
-    path: "/about",
-    element: <About />,
   },
 ]);
 
