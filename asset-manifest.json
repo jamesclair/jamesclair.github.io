@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.540e2131.css",
-    "main.js": "/static/js/main.420559a7.js",
+    "main.js": "/static/js/main.4c87ab18.js",
     "static/js/787.86751347.chunk.js": "/static/js/787.86751347.chunk.js",
-    "static/media/wedding.jpg": "/static/media/wedding.6305e574f3e1f2e1f3eb.jpg",
-    "static/media/newZealand.jpg": "/static/media/newZealand.ecf6e33405de37459244.jpg",
+    "static/media/profile.jpeg": "/static/media/profile.537d62b2a3640ac62eac.jpeg",
     "static/media/globe.svg": "/static/media/globe.50876e43933815577489131385e62e6d.svg",
     "static/media/telephone.svg": "/static/media/telephone.b4a626c77be92a1af23a3d8f7a3f77a6.svg",
     "index.html": "/index.html",
@@ -12,11 +11,11 @@
     "static/media/linkedin.svg": "/static/media/linkedin.48c578785988bce75017d928a5dc8a14.svg",
     "static/media/email.svg": "/static/media/email.b2a8bdc6692ddcdb9d6d67aacd50ac8e.svg",
     "main.540e2131.css.map": "/static/css/main.540e2131.css.map",
-    "main.420559a7.js.map": "/static/js/main.420559a7.js.map",
+    "main.4c87ab18.js.map": "/static/js/main.4c87ab18.js.map",
     "787.86751347.chunk.js.map": "/static/js/787.86751347.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.540e2131.css",
-    "static/js/main.420559a7.js"
+    "static/js/main.4c87ab18.js"
   ]
 }
