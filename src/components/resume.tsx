@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Layout from './layout'
 import styles from './resume.module.css'
 import BannerImg from './img/telephone.svg'
-import Email from './img/email.svg'
+import EmailIcon from './img/email.svg'
 import Globe from './img/globe.svg'
 import Github from './img/github.svg'
 import Linkedin from './img/linkedin.svg'
@@ -12,6 +12,135 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+const MY_NAME = "James Clair"
+const MY_TITLE = "Distributed Software and Infrastructure Engineer"
+const MY_EMAIL = "mailto:clair.james88@gmail.com"
+const MY_SUMMARY = "With 20 years of experience in software engineering, operations, and security, I specialize in microservice development, devops, gitops, secops, observability, data intensive applications, distributed architecture and scalable cloud infrastructures. My extensive background in all aspects of modern enterprise software allows me to drive successful projects and mentor teams to achieve excellence. Let me shape your next-gen architecture to unlock its full potential."
+const PRO_EXP_HEADER = "Professional Experience"
+
+
+interface company {
+    name: string;
+    timeFrame: string;
+    jobs: job[];
+}
+interface job {
+    title: string;
+    location: string;
+    description: string;
+    achievements: string;
+}
+var companies: company[] = [
+    {
+        name: "Horizon3.ai",
+        timeFrame: "Jun 2024-Present",
+        jobs: [
+            {
+                title: "Senior Platform Software Engineer",
+                location: "Remote",
+                description: "Developed the deployment and operation of secure, ephemeral, and scalable cloud-native platforms in AWS. Collaborated with platform architects to design and implement infrastructure solutions (Crossplane, Kubernetes, ArgoCD) and automated CI/CD pipelines (GitLab CI) to enhance platform performance and developer efficiency. Provided technical leadership and mentorship, driving process improvements and developing infrastructure modules to support cross-functional engineering teams in cloud environments.",
+                achievements: "Invented h3env an extensible Python client to improve platform developer performance and reduce the growing complexity of Horizon3 environment lifecycle.  Created Engineering-wide Horizon3 Improvement Proposals Process (HIP) providing a repeatable path for fostering cross-team collaboration on highly impactful changes to H3 products and interfaces.  Migrated all Kubernetes workloads from Fleet to ArgoCD while refactoring their definitions to reduce duplication, drift, and readability."
+            }
+        ]
+    },
+    {
+        name: "Select Star",
+        timeFrame: "Jul 2023-Jan 2024",
+        jobs: [
+            {
+                title: "Senior Platform Software Engineer",
+                location: "Remote",
+                description: "Designing, refactoring, building, securing, and supporting enterprise pipeline and platform with a focus on collection, ingestion, processing, and analysis of data warehouse and business intelligence data.",
+                achievements: "Enabled asynchronous and parallel data collection and ingestion. Improved pipeline testability by adding an ingested batch persistence layer. Introduced the ability to combine multiple parsing engines. Designed foundations of next-gen scalable data pipeline architecture. Up to 700% load-time optimization of multiple web pages backed by SQL."
+            }
+        ]
+    },
+    {
+        name: "Solv",
+        timeFrame: "Feb 2023-Jun 2023",
+        jobs: [
+            {
+                title: "Staff Integration Engineer",
+                location: "Remote",
+                description: "Led and mentored team in new greenfield development foundations to create a cost-effective and scalable integration platform.",
+                achievements: "Created unified provisioning bootstrap to serve as the foundations of next-gen platform.  Refactor of Athena scheduling api integrations.  Introduced Sentry Cron alerting for long running integration jobs."
+            }
+        ],
+    },
+    {
+        name: "LogRhythm",
+        timeFrame: "October 2014-Sep 2022",
+        jobs: [
+            {
+                title: "Tech Lead, Platform Engineering",
+                location: "Hybrid",
+                description: "Created, led, and mentored a team of highly skilled engineers while researching, designing, and implementing industry best practice tools and frameworks. Building a cost-effective, highly available and scalable, multi-tenant platform, pipeline, and infrastructure supporting up to a million messages per second.",
+                achievements: `Led 4 years of technical development of infrastructure for the new Axon cloud-native platform with a public launch in early 2022. Developed comprehensive Kubernetes Operators for OpenSearch, Flink, and LogRhythm Microservices. Created a high-performance multi-tenant data pipeline with enterprise service bus, self-serve domain-specific relational databases, central time-series, and tiered storage NoSQL database, and tenant-specific real-time analytics job clusters. Implemented fully secure and automated development golden paths for localdev and CI/CD. Automated creation, re-creation, and configuration of templated GitOps infra as code environments and platforms. Full adoption, migration and integration of newly acquired software into gold-standard practices. Provided best practice secure and public access to APIs and WebUIs through identity federated role-based access SSO. Founded and staffed "Colossus of Cloud", a team of highly successful and skilled engineers. Earned my Bachelor's in Computer Science and completed the complete data science bootcamp on Udemy.`
+            },
+            {
+                title: "Cloud DevOps Engineer III",
+                location: "Boulder, CO",
+                description: "Served as LogRhythm product expert on the DevOps team while migrating LogRhythm's core services to a SAAS offering hosted on Google Cloud Platform.",
+                achievements: "Developed de facto reference architecture and sizing guides for new cloud service offerings. Automated deployment of LogRhythm core services to Google Cloud Compute environment. Earned certifications in DevOps foundations, ITIL service management, Oracle SQL, and web development."
+            },
+            {
+                title: "Global Technical Release Manager",
+                location: "Hybrid",
+                description: "Delivered software to customers and internal teams through the development of release consulting, documentation, feedback, User Acceptance Testing, and bug management. Served part-time as TierIV escalations engineer solving the products toughest issues and developing their fixes.",
+                achievements: "Successfully revived and managed the Global Early Access Beta Program into across-organizational effort that incrementally introduced software releases while gaining early feedback and re-establishing customer trust. Developed FIPS, High Availability, and Disaster Recovery guides for new next-generation deployment architectures. Created Splunk Integration Guide allowing bulk exportation of data from Splunk to LogRhythm and easing the process of migration from our competitor. Co-rebuilt the Release Champion Program tripling internal content contributions, improving cross-organizational relationships, and chopping our release cycle down from 1 year to 6 months. Co-managed over 4 new product launches, 5 major and 23 minor releases. Authored Threat Intelligence Provider Service and LogRhythm SIEM to CloudAI integration guides. Continuously provided consultation and optimizations helping to scale beyond the 200k and 300k Messages Per Second benchmarks. Co-authored and led the tiger team in the creation of a comprehensive Advanced Intelligence Engine best practice guide.Earned certifications in Project +."
+            },
+            {
+                title: "Enterprise Consulting Lead, Professional Services",
+                location: "Boulder, CO",
+                description: "Led team that designed, operated, and scaled Security Operations Centers for large enterprise customers. Overcame some of the company's toughest projects through carefully crafted solution architectures. Provided team management, mentorship, training, and guidance.",
+                achievements: "Successfully led LogRhythm's largest enterprise deployment consisting of more than 30 Data Indexers, 28 Data processors, 4 Platform Managers, 4 Event Managers, 4 Advance Intelligence Engines(AIE), 4 Metadata, 4 Archival, and 4 Network Monitor servers over the course of a year, reaching record-breaking 100k and 150k Messages Per Second(MPS) ingestion benchmarks. Significantly reduced correlation gaps in Advanced Intelligence Engine for customers exceeding 90k MPS limit by developing a framework for routing events to the proper Engine on a per use-case basis. Invented the Data Dictionary to help customers categorize parsed metadata from hundreds of supported logging sources. Created the TTL Projection Tool to calculate storage usage and requirements based on logging rates and average log sizes. Developed and published the Alarm Best Practices Database and playbooks for alarms a customer may receive."
+            }
+        ]
+    },
+    {
+        name: "Fishnet Security Inc",
+        timeFrame: "July 2012-October 2014",
+        jobs: [
+            {
+                title: "Enterprise SIEM Engineer",
+                location: "Overland Park, KS",
+                description: "Administration, onboarding, and security consulting for enterprise customers. Improved internal integration services and aided customers in implementing lasting change in their incident, security, and operational processes.",
+                achievements: "Co-designed comprehensive SIEM/SOAR agnostic threat defense framework categorizing customer assets into groups for utilization in threat detection rules, reports, and filtering.  Successfully on-boarded over 12 enterprise SIEM customers each with different architectures, compliances, and use cases. Earned 2 certifications in LogRhythm."
+            },
+            {
+                title: "Enterprise Escalations Engineer",
+                location: "Overland Park, KS",
+                description: "Supported enterprise customers with a multitude of perimeter security products including high performance firewalls, proxies, VPNs, and endpoint security.",
+                achievements: "Became the sole crossbeam expert and well-known for firewall kernel debugging expertise. Earned 11 industry leading certifications: CISSP, MCSA, MCSE, CCNA, CNSA, CNSE, BCCPA, BCCPP, CCSA, CCSE, and CCMSE."
+            }
+        ]
+    },
+    {
+        name: "Pro Air Inc",
+        timeFrame: "Jan 2011-Mar 2012",
+        jobs: [
+            {
+                title: "Network Security Administrator",
+                location: "Olathe",
+                description: "Small Business Network and Security Administration while attending night school for cyber security.",
+                achievements: "Graduated New Horizon's Cyber Defender Specialty Bootcamp and earned a large number of prestigious industry certifications."
+            }
+        ]
+    },
+    {
+        name: "USMC",
+        timeFrame: "Mar 2007-Aug 2010",
+        jobs: [
+            {
+                title: "Operations Manager, Systems Administration",
+                location: "Miramar, CA",
+                description: "Led a team of systems and network administrators deploying and managing military data systems.",
+                achievements: "Earned two Colonel's coins for leading the successful deployment of Service Pack 26 across the west coast. First cross-regional HA over SIPRnet VPNs in over four years. Awarded Honor Graduate, Top of Class, Iron Man, and Meritorious MAST."
+            }
+        ]
+    }
+]
+
 class Resume extends Component {
     render() {
         return (
@@ -19,13 +148,13 @@ class Resume extends Component {
                 <div className={styles['body-container']}>
                     <div className={`${styles['banner']} ${styles['gradient-bg']}`}>
                         <div className={styles['banner-content']}>
-                            <p className={`${styles['banner-txt-pad']} ${styles['banner-name']}`} /*style={bannerTopPad}*/>James Clair</p>
-                            <p className={`${styles['banner-txt-pad']} ${styles['banner-title']}`}>Distributed Software and Infrastructure Engineer
+                            <p className={`${styles['banner-txt-pad']} ${styles['banner-name']}`} /*style={bannerTopPad}*/>{MY_NAME}</p>
+                            <p className={`${styles['banner-txt-pad']} ${styles['banner-title']}`}>{MY_TITLE}
                             </p>
                             <div className={styles['banner-img']} /*style={bannerBtmPad}*/>
                                 <div>
-                                    <Link className={styles['resume-link']} to="mailto:clair.james88@gmail.com">
-                                        <img className={styles['resume-img']} src={Email} alt="email icon"></img>
+                                    <Link className={styles['resume-link']} to={MY_EMAIL}>
+                                        <img className={styles['resume-img']} src={EmailIcon} alt="email icon"></img>
                                     </Link>
                                     <br></br>
                                 </div>
@@ -58,98 +187,32 @@ class Resume extends Component {
                     </div >
                     <div className={styles['txt-pad']}>
                         <p className={`${styles['summary']}`}>
-                            With 18 years of experience in software engineering, operations, and security, I specialize in microservice development, devops, finops, gitops, secops, observability, data intensive applications, distributed architecture and scalable cloud infrastructures. My extensive background in all aspects of modern enterprise software allows me to drive successful projects and mentor teams to achieve excellence. Let me shape your next-gen architecture to unlock its full potential.
+                            {MY_SUMMARY}
                         </p>
-                        <h4 className={`${styles['gradient-bg']} ${styles['section-header']}`}> Professional Experience</h4>
-                        <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Senior Platform Software Engineer - Select Star (Remote)
-                            </h6>
-                            <p className={styles['exp-header']}>Jul 2023-Jan 2024</p>
-                        </div>
+                        <h4 className={`${styles['gradient-bg']} ${styles['section-header']}`}>{PRO_EXP_HEADER}</h4>
 
-                        <p>
-                            Designing, refactoring, building, securing, and supporting enterprise pipeline and platform with a focus on collection, ingestion, processing, and analysis of data warehouse and business intelligence data.
-                            <br></br>
-                            <span className={styles['achievements-header']}>Achievements:</span> Enabled asynchronous and parallel data collection and ingestion.Improved pipeline testability by adding an ingested batch persistence layer.Introduced the ability to combine multiple parsing engines.Designed foundations of next-gen scalable data pipeline architecture.Up to 700 % load-time optimization of multiple web pages backed by SQL.
-                            <br></br>
-                        </p >
+                        {companies.map((company, companyIndex) => (
+                            <div key={companyIndex} className={styles['p-company']}>
+                                <div className={styles['spaced-between']}>
+                                    <h6 className={styles['exp-header']}>
+                                        {company.name}
+                                    </h6>
+                                    <p className={styles['exp-header']}>
+                                        {company.timeFrame}
+                                    </p>
+                                </div>
 
-                        <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Staff Integration Engineer - Solv (Remote)
-                            </h6>
-                            <p className={styles['exp-header']}>Feb 2023-Jun 2023</p>
-                        </div>
-                        <p>
-                            Led and mentored team in new greenfield development foundations to create a cost-effective and scalable integration platform.
-                            <br></br>
-                            <span className={styles['achievements-header']}>Achievements:</span> Created unified provisioning bootstrap to serve as the foundations of next generation platform.Partner refactor of Athena scheduling api integrations.Introduced Sentry Cron alerting for long running integration jobs.
-                        </p >
+                                {company.jobs.map((job, jobIndex) => (
+                                    <p key={jobIndex} className={styles['p-job']}>
+                                        <strong>{job.title}</strong>
+                                        <br />
+                                        {job.description}&nbsp;&nbsp;{job.achievements}
+                                        <br />
+                                    </p>
+                                ))}
+                            </div>
+                        ))}
 
-                        <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Tech Lead, Platform Engineering - LogRhythm (Remote/Boulder, CO)</h6>
-                            <p className={styles['exp-header']}>October 2014-Sep 2022</p>
-                        </div>
-                        <p>
-                            Created, led, and mentored a team of highly skilled engineers while researching, designing, and implementing industry best practice tools and frameworks. Building a cost-effective, highly available and scalable, multi-tenant platform, pipeline, and infrastructure supporting up to a million messages per second.
-                            <br></br>
-                            <span className={styles['achievements-header']}>Achievements:</span> Led the technical development of infrastructure for the new Axon cloud-native platform over 3.5 years with a public launch in early 2022. Developed comprehensive Kubernetes Operators for OpenSearch, Flink, and LogRhythm Microservices / Microfrontends.Created a high-performance multi-tenant data pipeline with enterprise service bus, self-serve domain-specific relational databases, central time-series, and tiered storage NoSQL database, and tenant-specific real-time analytics job clusters.Implemented fully secure and automated development golden paths for localdev and CI / CD.Automated creation, re-creation, and configuration of templated GitOps infrastructure as code environments and platforms.Full migration and integration of newly acquired Mistnet software into gold-standard CI / CD and platform.Providing best practice secure and public access to APIs and WebUIs through identity federated role-based access.Founded and staffed "Colossus of Cloud", a team of highly successful and skilled engineers.Earned my Bachelor's in Computer Science and completed the complete data science bootcamp on Udemy.
-                            <br></br>
-                            <strong>Cloud DevOps Engineer III</strong>
-                            <br></br>
-                            Served as LogRhythm product expert on the DevOps team while migrating LogRhythm's core services to a SAAS offering hosted on Google Cloud Platform.
-                            <br></br>
-                            <span className={styles['achievements-header']}>Achievements:</span> Developed de facto reference architecture and sizing guides for new cloud service offerings. Automated deployment of LogRhythm core services to Google Cloud Compute environment.Earned certifications in DevOps foundations, ITIL service management, Oracle SQL, and web development.
-                            <br></br>
-                            <strong>Global Technical Release Manager</strong>
-                            <br></br>
-                            Delivered software to customers and internal teams through the development of release consulting, documentation, feedback, User Acceptance Testing, and bug management.Served part-time as TierIV escalations engineer contributing improvements and fixes directly to the core product.
-                            <br></br>
-                            <span className={styles['achievements-header']}>Achievements:</span> Successfully revived and managed the Global Early Access Beta Program into across-organizational effort that incrementally introduced software releases while gaining early feedback and re-establishing customer trust.Developed FIPS, High Availability, and Disaster Recovery guides for new next-generation deployment architectures.Created Splunk Integration Guide allowing bulk exportation of data from Splunk to LogRhythm and easing the process of migration from our competitor.Co-rebuilt the Release Champion Program tripling internal content contributions, improving cross-organizational relationships, and chopping our release cycle down from 1 year to 6 months.Co-managed over 4 new product launches, 5 major and 23 minor releases.Authored Threat Intelligence Provider Service and LogRhythm SIEM to CloudAI integration guides. Continuously provided consultation and optimizations helping to scale beyond the 200k and 300k Messages Per Second benchmarks.Co-authored and led the tiger team in the creation of a comprehensive Advanced Intelligence Engine best practice guide.Earned certifications in Project +.
-                            <br></br>
-                            <strong>Enterprise Consulting Lead, Professional Services</strong>
-                            <br></br>
-                            Led team that designed, operated, and scaled Security Operations Centers for large enterprise customers. Overcame some of the company's toughest projects through carefully crafted solution architectures. Provided team management, mentorship, training, and guidance.
-                            <br></br>
-                            <span className={styles['achievements-header']}>Achievements:</span> Successfully led LogRhythm's largest enterprise deployment consisting of more than 30 Data Indexers, 28 Data processors, 4 Platform Managers, 4 Event Managers, 4 Advance Intelligence Engines(AIE), 4 Metadata, 4 Archival, and 4 Network Monitor servers over the course of a year, reaching record-breaking 100k and 150k Messages Per Second(MPS) ingestion benchmarks.Significantly reduced correlation gaps in Advanced Intelligence Engine for customers exceeding 90k MPS limit by developing a framework for routing events to the proper Engine on a per use -case basis.Invented the Data Dictionary to help customers categorize parsed metadata from hundreds of supported logging sources.Created the TTL Projection Tool to calculate storage usage and requirements based on logging rates and average log sizes.Developed and published the Alarm Best Practices Database and Guide to provide and maintain recommended steps for pre-defined alarms a customer may receive.
-                        </p >
-
-                        <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Enterprise SIEM Engineer - Fishnet Security Inc (Overland Park, KS)
-                            </h6>
-                            <p className={styles['exp-header']}>July 2012-October 2014</p>
-                        </div>
-                        <p>
-                            Administration, onboarding, and security consulting for enterprise customers. Improved internal integration services and aided customers in implementing lasting change in their incident, security, and operational processes.
-                            <br></br>
-
-                            <span className={styles['achievements-header']}>Achievements:</span> Co-designed comprehensive SIEM / tool agnostic threat defense framework categorizing customer assets into groups for utilization in threat detection rules, reports, and filtering.  Successfully on-boarded over 12 enterprise SIEM customers each with different architectures, compliances, and use cases.Earned 2 certifications in LogRhythm.
-                            <br></br>
-                            <strong>Enterprise Escalations Engineer</strong>
-                            <br></br>
-                            Supported enterprise customers with a multitude of perimeter security products including high performance firewalls, proxies, VPNs, and endpoint security.
-                            <br></br>
-                            <span className={styles['achievements-header']}>Achievements:</span> Became the sole crossbeam expert and well-known for firewall kernel debugging expertise. Earned 11 industry leading certifications: CISSP, MCSA, MCSE, CCNA, CNSA, CNSE, BCCPA, BCCPP, CCSA, CCSE, and CCMSE.
-                        </p >
-                        <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Network Security Administrator - Pro Air Inc (Olathe, KS)
-                            </h6>
-                            <p className={styles['exp-header']}>Jan 2011-Mar 2012</p>
-                        </div>
-                        <p>
-                            Small Business Network and Security Administration while attending night school for cyber security.
-                            <br></br>
-                            <span className={styles['achievements-header']}>Achievements:</span>Graduated New Horizon's Cyber Defender Specialty Bootcamp and earned a large number of prestigious industry certifications.
-                        </p >
-                        <div className={styles['spaced-between']}>
-                            <h6 className={styles['exp-header']}>Operations Manager, Systems Administration - USMC (Miramar, CA)
-                            </h6>
-                            <p className={styles['exp-header']}>Mar 2007-Aug 2010</p>
-                        </div>
-                        <p>
-                            Led a team of systems and network administrators deploying and managing military data systems.
-                            <br></br>
-                            <span className={styles['achievements-header']}>Achievements:</span> Earned two Colonel's coins for leading the successful deployment of Service Pack 26 across the west coast.First cross-regional HA over SIPRnet VPNs in over four years.Awarded Honor Graduate, Top of Class, Iron Man, and Meritorious MAST.
-                        </p >
                         <h4 className={`${styles['gradient-bg']} ${styles['section-header']}`}>Skills</h4>
                         <p>
                             <strong>Development:</strong> Data Modeling/Ingestion/Processing, Data Storage/Retrieval/Reporting/Analytics, REST APIs, Relational/Non-Relational Datastores, Enterprise Integration Patterns, Test-Driven Dev, Domain-Driven Design, Event-Driven Architectures, Data Mesh Architecture, Kubernetes Operator Dev, CI/CD, Typed Object-Oriented Languages, Self-Service Infra, AuthN & AuthZ Svc(s), 12-Factor App, Bug Mgmt, Refactoring, Mono-Repo Design, Trunk-based Dev, System Design, Infra & Policy As Code, SLA/SLO/SLI Definition, Config Mgmt, Data Structures & Algorithms
@@ -160,12 +223,12 @@ class Resume extends Component {
                         </p>
                         <h4 className={`${styles['gradient-bg']} ${styles['section-header']}`}>Tools</h4>
                         <p>
-                            <strong>Languages & Frameworks:</strong> Python, SQL, JavaScript, Bash, Django, Celery, Java, React, Golang, KubeBuilder, Yeoman, FastAPI, Maven, Quarkus, RegEx, Lucene, PromQL, EJS, Jinja, Kustomize, YAML, XML, HTML, CSS, JSON, CSV, C++, Powershell
+                            <strong>Languages & Frameworks:</strong> Python, SQL, JavaScript, Bash, Django, Celery, Java, React, Golang, KubeBuilder, Yeoman, FastAPI, Maven, Quarkus, RegEx, Lucene, PromQL, EJS, Jinja, Kustomize, YAML, XML, HTML, CSS, JSON, CSV, C++, Powershell, GitHub, GitLab
 
                             <br></br>
                             <strong>Data & Secrets Management:</strong> PostgreSQL, Elasticsearch, Opensearch, AWS S3, Kafka, Flink, Vault, External Secrets, Etcd, SQL Server, AWS Redshift, Snowflake, Github Secrets, Raft, Consul, LogRhythm AIE, GoPass, Oracle, Excel
                             <br></br>
-                            <strong>Infrastructure & Orchestration:</strong> Kubernetes, AWS(EKS, EC2, Lambda, ECR, ControlTower), Terraform, ArgoCD, Kops, Docker, GitHub Actions, Linux, Git, Veracode, Sonarqube, Ansible, Salt, Rundeck, GCP, Windows, SAMBA, VMWare
+                            <strong>Infrastructure & Orchestration:</strong> Kubernetes, Crossplane, AWS(EKS, EC2, Lambda, ECR, ControlTower), ArgoCD, Terraform, Argo Workflows, Kops, Docker, GitHub Actions, Linux, Git, Veracode, Sonarqube, Ansible, Salt, Rundeck, GCP, Windows, SAMBA, VMWare
                             <br></br>
                             <strong>Networking & Security:</strong> Istio, AWS(ELB, VPC, Route53, IAM, Security Groups, SSO), Keycloak, Okta, Pomerium, Certificates Manager, HAProxy, Apache HTTP, Palo Alto, BlueCoat, Checkpoint, F5, Cisco, Wireshark
                             <br></br>

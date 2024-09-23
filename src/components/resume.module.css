@@ -147,6 +147,21 @@ p {
     padding-right: 1.5%;
 }
 
+.p-job {
+    padding-left: 2.0%;
+    padding-right: 2.0%;
+    margin-bottom: 0px;
+}
+
+.p-company {
+    margin-bottom: 8px
+}
+
+.p-achievement {
+    padding-left: 0%;
+    padding-left: 0%;
+}
+
 
 .edu-table {
     -webkit-column-count: 2;
