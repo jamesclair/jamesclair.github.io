@@ -8,6 +8,7 @@ import linkedin from "../images/linkedin.svg"
 import email from "../images/email.svg"
 import phone from "../images/telephone.svg"
 import github from "../images/github.svg"
+import styles from './navigation.module.css'
 import '../index.scss';
 
 function Navigation() {
