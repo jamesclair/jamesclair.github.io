@@ -26,3 +26,90 @@ import styles from './timeline.module.css'
 import Layout from './layout';
 
 
+const StyledTimelineDot = styled(TimelineDot)(({ theme }) => ({
+    backgroundImage: 'linear-gradient(to bottom, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)',
+    borderStyle: 'none',
+    padding: '8px',
+}));
+
+interface careerEvent {
+    title: string;
+    yearStart: string; // would be better as a date/time object
+    yearEnd: string;
+    desc: string;
+    icon: React.ReactNode
+}
+
+var careerEvents: careerEvent[] = [
+    {
+        title: "Horizon3 Environment Lifecycle Manager (h3env)",
+        yearStart: "2024",
+        yearEnd: "",
+        desc: "Developed a Python client to manage platform environments, automating and stitching workflows including Crossplane, ArgoCD, Argo Workflows, and GitLab CI/CD improving bootstrap, updates, teardowns, rebuilds, and administrative tasks. This integration streamlined environment management, enabling cohesive and efficient operations across both commercial and government(FedRamp) static and ephemeral platforms.",
+        icon: <TerminalIcon htmlColor='black' />
+    },
+    {
+        title: "Horizon3 Improvement Proposals Process (HIP)",
+        yearStart: "2024",
+        yearEnd: "",
+        desc: "Established an engineering-wide process to foster cross-team collaboration on impactful changes to H3 products and interfaces, providing a repeatable framework for driving alignment and execution across teams.",
+        icon: <LightbulbIcon htmlColor='black' />
+    },
+    {
+        title: "Fleet to ArgoCD Migration",
+        yearStart: "2024",
+        yearEnd: "",
+        desc: "Migrated over 30 Kubernetes workloads from Fleet to ArgoCD, refactoring workload definitions to reduce duplication, prevent drift, and improve readability. The migration included operational services like Istio, OpenSearch, and Argo Workflows, along with critical services supporting on-demand customer ephemeral Autonomous Penetration Testing platforms and clusters, ensuring smoother deployments and improved infrastructure management.",
+        icon: <MoveUpIcon htmlColor='black' />
+    },
+    {
+        title: "Certified Kubernetes Administrator (CKA)",
+        yearStart: "2024",
+        yearEnd: "",
+        desc: "After years of managing Kubernetes clusters in diverse environments, I earned my CKA certification. It was one of the more challenging certifications among the 20+ I've completed, but well worth it. I'm already preparing for the next one.",
+        icon: <MoveUpIcon htmlColor='black' />
+    },
+    {
+        title: "Select Star Scalable Asynchronous Data Ingestion",
+        yearStart: "2023",
+        yearEnd: "2024",
+        desc: `Led the overhaul of the ingestion service for large-scale customers, reworking the Celery worker architecture to asynchronously retrieve 100,000-log batches and save them to pluggable storage like S3. This cut ingestion times from 5 minutes to under 20 seconds, boosting throughput and reducing system impact. The new architecture eliminated multi-day job failures by enabling recovery from previously collected batches.  Persisted batches could also be replayed to quickly reproduce and troubleshoot errors without impacting customers. Decoupling ingestion from downstream processes increased fault tolerance and enabled parallel processing, reducing recovery times from days to seconds and scaling to handle millions of logs daily.`,
+
+        icon: <MediationIcon htmlColor='black' />
+    },
+    {
+        title: "Select Star Multiple Parsing Engine Support",
+        yearStart: "2023",
+        yearEnd: "2024",
+        desc: `Collaborated with a fellow engineer to refactor and modernize the data lineage and query parsing pipeline using Python, Rust (via PyO3), and Django, orchestrated with Kubernetes and Celery. The focus was on improving flexibility, maintainability, and support for complex queries across multiple engines, including proprietary and external sources like Snowflake Access History. We introduced batch processing and the strategy pattern to streamline adding new parsers and reduce code duplication. By enforcing metadata schemas during processing to our relational and hypergraph PostgreSQL backends, we enriched lineage tracking and improved troubleshooting. The refactor followed SOLID object oriented design principles, reducing technical debt while maintaining performance and avoiding downtime, resulting in a scalable and reliable solution.`,
+
+        icon: <AccountTreeIcon htmlColor='black' />
+    },
+
+    {
+        title: "Select Star Web Page Load Time Optimizations",
+        yearStart: "2023",
+        yearEnd: "",
+        desc: `Achieved up to 700% load-time optimization on multiple nearly unusable web pages backed by a Django API and ORM, vastly improving the user experience. Profiled and optimized SQL queries for large datasets, resolving issues such as n+1 queries, inefficient recursive select statements, and missing or excessive indexing.`,
+
+        icon: <FlashOnIcon htmlColor='black' />
+    },
+    {
+        title: "Select Star Next-Gen Data Pipeline Design Foundations",
+        yearStart: "2023",
+        yearEnd: "",
+        desc: `Developed initial designs for a next-gen scalable data pipeline architecture, leveraging data mesh principles and drawing on experience with high-volume, high-velocity event streaming and analytics pipelines like LogRhythm Axon. The designs supported both real-time and batch data processing, laying the foundation for scalable, flexible handling of diverse data workloads.`,
+
+        icon: <ArchitectureIcon htmlColor='black' />
+    },
+    {
+        title: "Previous Timeline Under Construction",
+        yearStart: "2007-2023",
+        yearEnd: "",
+        desc: `Please check back soon for a full timeline of projects and experiences, including LogRhythm Axon, my AI capstone for my Bachelor's degree, and LRCloud—key initiatives I've had the opportunity to contribute to over my 20-year career!`,
+
+        icon: <WarningIcon htmlColor='black' />
+    },
+
+]
+
