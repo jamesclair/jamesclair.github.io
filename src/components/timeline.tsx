@@ -113,3 +113,47 @@ var careerEvents: careerEvent[] = [
 
 ]
 
+
+
+export default function CustomizedTimeline() {
+    const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
+
+    return (
+        <Layout>
+            <Timeline sx={{
+                [`& .${timelineOppositeContentClasses.root}`]: {
+                    flex: isSmallScreen ? 0.2 : 1,
+                },
+                color: 'lightgray'
+            }} position={isSmallScreen ? 'right' : 'alternate'}>
+                {careerEvents.map((careerEvent, careerIndex) => (
+                    <TimelineItem>
+                        <TimelineOppositeContent
+                            sx={{ m: 'auto 0' }}
+                            align="right"
+                            variant="body2"
+                        >
+                            {`${careerEvent.yearStart}${careerEvent.yearEnd ? ' - ' + careerEvent.yearEnd : ''}`}
+                        </TimelineOppositeContent>
+                        <TimelineSeparator >
+                            <TimelineConnector />
+                            <StyledTimelineDot>
+                                {careerEvent.icon}
+                            </StyledTimelineDot>
+                            <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent sx={{ py: '6px', px: 2 }}>
+                            <Typography variant="h6" component="span" style={{ backgroundImage: 'linear-gradient(to right, #b588fc, #a891ff, #9b99ff, #91a1ff, #88a7ff, #7cb0ff, #73b8ff, #6fc0ff, #68cbff, #66d6ff, #6ce0ff, #77eafd)', color: 'transparent', backgroundClip: 'text' }}>
+                                {careerEvent.title}
+                            </Typography>
+                            <Typography className={styles['typography-career-event-desc']}>{careerEvent.desc}</Typography>
+                        </TimelineContent>
+                    </TimelineItem>
+                ))}
+
+            </Timeline>
+        </Layout >
+
+    );
+}
