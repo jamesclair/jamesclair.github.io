@@ -1,3 +1,4 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,6 +11,15 @@ import phone from "../images/telephone.svg"
 import github from "../images/github.svg"
 import styles from './navigation.module.css'
 import '../index.scss';
+
+// Define the props type for the CustomNavLink, using Nav.Link's props as base
+type CustomNavLinkProps = React.ComponentProps<typeof Nav.Link> & {
+    active?: boolean; // Optional prop for active state
+};
+
+const CustomNavLink: React.FC<CustomNavLinkProps> = ({ active, ...props }) => (
+    <Nav.Link {...props} className={styles['nav-link']} />
+);
 
 function Navigation() {
     return (
@@ -29,10 +39,10 @@ function Navigation() {
                     <Offcanvas.Body>
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="gradient-text">
-                                <Nav.Link as={Link} to="/">Home</Nav.Link>
-                                <Nav.Link as={Link} to="/portfolio">Portfolio</Nav.Link>
-                                <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
-                                <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+                                <CustomNavLink as={Link} to="/">Home</CustomNavLink>
+                                <CustomNavLink as={Link} to="/portfolio">Portfolio</CustomNavLink>
+                                <CustomNavLink as={Link} to="/resume">Resume</CustomNavLink>
+                                <CustomNavLink as={Link} to="/blog">Blog</CustomNavLink>
                             </Nav>
                             <Nav className="ms-auto">
                                 <Nav.Link href='https://github.com/jamesclair'>
