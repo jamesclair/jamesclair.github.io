@@ -4,7 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from "react-router-dom";
-import styles from './navigation.module.css'
 import linkedin from "../images/linkedin.svg"
 import email from "../images/email.svg"
 import phone from "../images/telephone.svg"
@@ -30,13 +29,14 @@ function Navigation() {
                     id={`offcanvasNavbar-expand-lg`}
                     aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
                     placement="end"
+                    style={{ color: 'transparent' }}
                 >
-                    <Offcanvas.Header closeButton className={styles['nav-header']}>
+                    <Offcanvas.Header closeButton>
                         <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
                             Menu
                         </Offcanvas.Title>
                     </Offcanvas.Header>
-                    <Offcanvas.Body>
+                    <Offcanvas.Body style={{ color: 'transparent' }}>
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="gradient-text">
                                 <CustomNavLink as={Link} to="/">Home</CustomNavLink>
