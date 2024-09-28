@@ -13,7 +13,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const MY_NAME = "James Clair"
-const MY_TITLE = "Distributed Software and Infrastructure Engineer"
+const MY_TITLE = "Principal Platform Software Engineer"
 const MY_EMAIL = "mailto:clair.james88@gmail.com"
 const MY_SUMMARY = "With 20 years of experience in software engineering, operations, and security, I specialize in microservice development, devops, gitops, secops, observability, data intensive applications, distributed architecture and scalable cloud infrastructures. My extensive background in all aspects of modern enterprise software allows me to drive successful projects and mentor teams to achieve excellence. Let me shape your next-gen architecture to unlock its full potential."
 const PRO_EXP_HEADER = "Professional Experience"
@@ -72,7 +72,7 @@ var companies: company[] = [
         timeFrame: "October 2014-Sep 2022",
         jobs: [
             {
-                title: "Tech Lead, Platform Engineering",
+                title: "Tech Lead Platform Engineering",
                 location: "Hybrid",
                 description: "Created, led, and mentored a team of highly skilled engineers while researching, designing, and implementing industry best practice tools and frameworks. Building a cost-effective, highly available and scalable, multi-tenant platform, pipeline, and infrastructure supporting up to a million messages per second.",
                 achievements: `Led 4 years of technical development of infrastructure for the new Axon cloud-native platform with a public launch in early 2022. Developed comprehensive Kubernetes Operators for OpenSearch, Flink, and LogRhythm Microservices. Created a high-performance multi-tenant data pipeline with enterprise service bus, self-serve domain-specific relational databases, central time-series, and tiered storage NoSQL database, and tenant-specific real-time analytics job clusters. Implemented fully secure and automated development golden paths for localdev and CI/CD. Automated creation, re-creation, and configuration of templated GitOps infra as code environments and platforms. Full adoption, migration and integration of newly acquired software into gold-standard practices. Provided best practice secure and public access to APIs and WebUIs through identity federated role-based access SSO. Founded and staffed "Colossus of Cloud", a team of highly successful and skilled engineers. Earned my Bachelor's in Computer Science and completed the complete data science bootcamp on Udemy.`
@@ -148,10 +148,10 @@ class Resume extends Component {
                 <div className={styles['body-container']}>
                     <div className={`${styles['banner']} ${styles['gradient-bg']}`}>
                         <div className={styles['banner-content']}>
-                            <p className={`${styles['banner-txt-pad']} ${styles['banner-name']}`} /*style={bannerTopPad}*/>{MY_NAME}</p>
+                            <p className={`${styles['banner-txt-pad']} ${styles['banner-name']}`}>{MY_NAME}</p>
                             <p className={`${styles['banner-txt-pad']} ${styles['banner-title']}`}>{MY_TITLE}
                             </p>
-                            <div className={styles['banner-img']} /*style={bannerBtmPad}*/>
+                            <div className={styles['banner-img']}>
                                 <div>
                                     <Link className={styles['resume-link']} to={MY_EMAIL}>
                                         <img className={styles['resume-img']} src={EmailIcon} alt="email icon"></img>
