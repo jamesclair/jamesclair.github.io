@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.123fbf90.css",
-    "main.js": "/static/js/main.af159eac.js",
-    "static/js/787.86751347.chunk.js": "/static/js/787.86751347.chunk.js",
+    "main.css": "/static/css/main.42fb5220.css",
+    "main.js": "/static/js/main.3ecc3f45.js",
+    "static/js/453.534db5b8.chunk.js": "/static/js/453.534db5b8.chunk.js",
     "static/media/colorado.jpg": "/static/media/colorado.827a81e11dfe2cdbec19.jpg",
     "static/media/globe.svg": "/static/media/globe.50876e43933815577489131385e62e6d.svg",
     "static/media/telephone.svg": "/static/media/telephone.b4a626c77be92a1af23a3d8f7a3f77a6.svg",
@@ -10,12 +10,12 @@
     "static/media/github.svg": "/static/media/github.a2dcecaacdba94077f71818776dd805b.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.48c578785988bce75017d928a5dc8a14.svg",
     "static/media/email.svg": "/static/media/email.b2a8bdc6692ddcdb9d6d67aacd50ac8e.svg",
-    "main.123fbf90.css.map": "/static/css/main.123fbf90.css.map",
-    "main.af159eac.js.map": "/static/js/main.af159eac.js.map",
-    "787.86751347.chunk.js.map": "/static/js/787.86751347.chunk.js.map"
+    "main.42fb5220.css.map": "/static/css/main.42fb5220.css.map",
+    "main.3ecc3f45.js.map": "/static/js/main.3ecc3f45.js.map",
+    "453.534db5b8.chunk.js.map": "/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.123fbf90.css",
-    "static/js/main.af159eac.js"
+    "static/css/main.42fb5220.css",
+    "static/js/main.3ecc3f45.js"
   ]
 }
