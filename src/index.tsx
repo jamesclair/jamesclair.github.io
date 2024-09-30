@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 import Home from './pages/home';
 import ResumeComponent from "./pages/resume";
+import Portfolio from "./pages/portfolio";
 import Blog from "./pages/blog";
 
 import BlogArticle from './components/blogArticle';
@@ -36,9 +37,13 @@ const router = createHashRouter([
     path: "/resume",
     element: <ResumeComponent />,
   },
+  // {
+  //   path: "/portfolio",
+  //   element: <ExternalRedirect to="https://github.com/jamesclair" />,
+  // },
   {
     path: "/portfolio",
-    element: <ExternalRedirect to="https://github.com/jamesclair" />,
+    element: <Portfolio />,
   },
   {
     path: "/blog",

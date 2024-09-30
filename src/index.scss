@@ -1,4 +1,6 @@
 // Override default variables before the import
+
+$enable-shadows: true;
 $enable-gradients: true;
 $body-bg: black;
 
@@ -13,10 +15,6 @@ $body-bg: black;
     .gradient-text {
         background-image: none;
     }
-
-
-
-
 }
 
 
