@@ -19,6 +19,9 @@ import MoveUpIcon from '@mui/icons-material/MoveUp';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
 import WarningIcon from '@mui/icons-material/Warning';
+import FoundationIcon from '@mui/icons-material/Foundation';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 
 import { styled } from '@mui/system';
 import styles from './timeline.module.css'
@@ -56,7 +59,7 @@ var careerEvents: careerEvent[] = [
         icon: <LightbulbIcon htmlColor='black' />
     },
     {
-        title: "Fleet to ArgoCD Migration",
+        title: "Horizon 3 Fleet to ArgoCD Migration",
         yearStart: "2024",
         yearEnd: "",
         desc: "Migrated over 30 Kubernetes workloads from Fleet to ArgoCD, refactoring workload definitions to reduce duplication, prevent drift, and improve readability. The migration included operational services like Istio, OpenSearch, and Argo Workflows, along with critical services supporting on-demand customer ephemeral Autonomous Penetration Testing platforms and clusters, ensuring smoother deployments and improved infrastructure management.",
@@ -67,13 +70,13 @@ var careerEvents: careerEvent[] = [
         yearStart: "2024",
         yearEnd: "",
         desc: "After years of managing Kubernetes clusters in diverse environments, I earned my CKA certification. It was one of the more challenging certifications among the 20+ I've completed, but well worth it. I'm already preparing for the next one.",
-        icon: <MoveUpIcon htmlColor='black' />
+        icon: <WorkspacePremiumIcon htmlColor='black' />
     },
     {
         title: "Select Star Scalable Asynchronous Data Ingestion",
         yearStart: "2023",
         yearEnd: "2024",
-        desc: `Led the overhaul of the ingestion service for large-scale customers, reworking the Celery worker architecture to asynchronously retrieve 100,000-log batches and save them to pluggable storage like S3. This cut ingestion times from 5 minutes to under 20 seconds, boosting throughput and reducing system impact. The new architecture eliminated multi-day job failures by enabling recovery from previously collected batches.  Persisted batches could also be replayed to quickly reproduce and troubleshoot errors without impacting customers. Decoupling ingestion from downstream processes increased fault tolerance and enabled parallel processing, reducing recovery times from days to seconds and scaling to handle millions of logs daily.`,
+        desc: `Led the overhaul of the ingestion service for large-scale customers, reworking the Celery worker architecture to asynchronously retrieve 100,000-log batches from large data warehouses and save them to pluggable storage like S3. This cut ingestion times from 5 minutes to under 20 seconds, boosting throughput and reducing system impact. The new architecture eliminated multi-day job failures by enabling recovery from previously collected batches.  Persisted batches could be replayed to quickly reproduce errors without impacting customers. Decoupling ingestion from downstream processes increased fault tolerance and enabled parallel processing, reducing recovery times from days to seconds and scaling to millions of logs daily.`,
 
         icon: <MediationIcon htmlColor='black' />
     },
@@ -81,7 +84,7 @@ var careerEvents: careerEvent[] = [
         title: "Select Star Multiple Parsing Engine Support",
         yearStart: "2023",
         yearEnd: "2024",
-        desc: `Collaborated with a fellow engineer to refactor and modernize the data lineage and query parsing pipeline using Python, Rust (via PyO3), and Django, orchestrated with Kubernetes and Celery. The focus was on improving flexibility, maintainability, and support for complex queries across multiple engines, including proprietary and external sources like Snowflake Access History. We introduced batch processing and the strategy pattern to streamline adding new parsers and reduce code duplication. By enforcing metadata schemas during processing to our relational and hypergraph PostgreSQL backends, we enriched lineage tracking and improved troubleshooting. The refactor followed SOLID object oriented design principles, reducing technical debt while maintaining performance and avoiding downtime, resulting in a scalable and reliable solution.`,
+        desc: `Refactored and modernized the data lineage and query parsing pipeline using Python, PyO3 for Rust, and Django, orchestrated with Kubernetes and Celery. The focus was on improving flexibility, maintainability, and support for complex queries across multiple engines, including proprietary and external sources like Snowflake. We introduced a new batch processing module to streamline new parsers and reduce code duplication. By enforcing schema throughout the pipeline, we enriched lineage tracking and improved troubleshooting. The refactor followed SOLID object oriented design principles, reducing technical debt while maintaining performance and avoiding downtime, resulting in a scalable and reliable solution.`,
 
         icon: <AccountTreeIcon htmlColor='black' />
     },
@@ -101,6 +104,22 @@ var careerEvents: careerEvent[] = [
         desc: `Developed initial designs for a next-gen scalable data pipeline architecture, leveraging data mesh principles and drawing on experience with high-volume, high-velocity event streaming and analytics pipelines like LogRhythm Axon. The designs supported both real-time and batch data processing, laying the foundation for scalable, flexible handling of diverse data workloads.`,
 
         icon: <ArchitectureIcon htmlColor='black' />
+    },
+    {
+        title: "Solv Unified Development Provisioning",
+        yearStart: "2023",
+        yearEnd: "",
+        desc: `Created an extensible, native and container-based unified development environment with Bash, Docker Compose, and Just, streamlining onboarding and daily work for Solv developers. By standardizing tools and processes, the solution enabled faster development and onboarding while fostering best practices and paving the way for next-gen services. Workflows mirrored production environments, minimizing unexpected bugs and behaviors.`,
+
+        icon: <FoundationIcon htmlColor='black' />
+    },
+    {
+        title: "Solv Long Integration Job Sentry Cron Alerts",
+        yearStart: "2023",
+        yearEnd: "",
+        desc: `Implemented Sentry Cron alerts to monitor long-running integration jobs, proactively detecting performance bottlenecks and reducing downtime by addressing failures or delays in real time. Enhanced system reliability and workflow efficiency by setting up notifications for job anomalies, enabling quick issue resolution before business operations were impacted. Leveraged Sentry's detailed error tracking to diagnose and resolve problems more efficiently, improving overall system performance and transparency.`,
+
+        icon: <VisibilityIcon htmlColor='black' />
     },
     {
         title: "Previous Timeline Under Construction",
