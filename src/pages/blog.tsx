@@ -5,13 +5,13 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
 
-import styles from './blog.module.css'
 import '../index.scss'
 import Layout from '../components/layout'
 import MarkdownHeaderComponent from '../components/markdownHeader';
 import MarkdownFirstParagraphComponent from '../components/markdownFirstParagraph';
 import EventProcessingServiceArchitecture from '../docs/EventProcessingServiceArchitecure.md'
 import OlapOlepOltpAndDataMeshes from '../docs/OLAP_OLEP_OLTP_And_DataMeshes.md'
+import EventProcessingArchitectureImage from '/EventProcessingArchitecture.png'
 
 
 function Blog() {
@@ -21,7 +21,7 @@ function Blog() {
                 <Row md={3} >
                     <Col>
                         <Card>
-                            <Card.Img variant="top" src="/EventProcessingArchitecture.png" />
+                            <Card.Img variant="top" src={EventProcessingArchitectureImage} />
                             <Card.Body>
                                 <MarkdownHeaderComponent mdxContent={EventProcessingServiceArchitecture}></MarkdownHeaderComponent>
                                 <hr></hr>

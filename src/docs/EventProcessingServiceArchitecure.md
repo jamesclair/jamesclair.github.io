@@ -12,4 +12,4 @@ As an avid user of enterprise real-time logging and analytics platforms like Log
 
 To further illustrate what an event processing pipeline and data mesh like this would look like, check out the below diagram.
 
-![Event Processing Architecture Diagram](EventProcessingArchitecture.png)
+![Event Processing Architecture Diagram](./EventProcessingArchitecture.png)

@@ -2,11 +2,11 @@ import { Component } from 'react';
 import { Link } from 'react-router-dom'
 import Layout from './layout'
 import styles from './resume.module.css'
-import BannerImg from './img/telephone.svg'
-import EmailIcon from './img/email.svg'
-import Globe from './img/globe.svg'
-import Github from './img/github.svg'
-import Linkedin from './img/linkedin.svg'
+import BannerImg from '../images/telephone.svg'
+import EmailIcon from '../images/email.svg'
+import Globe from '../images/globe.svg'
+import Github from '../images/github.svg'
+import Linkedin from '../images/linkedin.svg'
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';

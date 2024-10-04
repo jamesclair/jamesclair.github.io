@@ -14,10 +14,7 @@ export type BlogArticleProps = { articleTitle: string }
 class BlogArticle extends Component<BlogArticleProps> {
     render() {
         const { articleTitle } = this.props;
-        console.log(articleTitle)
-        console.log(EventProcessingServiceArchitecture)
         let articleMarkdown: string = articleMap[articleTitle]
-        console.log(articleMarkdown)
         return (
             <Layout>
                 <ReactMarkdown className={styles.article}>{articleMarkdown}</ReactMarkdown>
