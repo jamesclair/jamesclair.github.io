@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import * as ReactDOM from "react-dom/client";
 import {
-  createHashRouter,
+  createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
@@ -27,8 +27,8 @@ const ExternalRedirect: React.FC<ExternalRedirectProps> = ({ to }) => {
   return null;
 };
 
-
-const router = createHashRouter([
+// Router configuration
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
@@ -37,10 +37,6 @@ const router = createHashRouter([
     path: "/resume",
     element: <ResumeComponent />,
   },
-  // {
-  //   path: "/portfolio",
-  //   element: <ExternalRedirect to="https://github.com/jamesclair" />,
-  // },
   {
     path: "/portfolio",
     element: <Portfolio />,
@@ -59,20 +55,13 @@ const router = createHashRouter([
   },
 ]);
 
-// @ts-ignore
-ReactDOM.createRoot(document.getElementById("root")).render(
+// Render the application
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <div data-bs-theme="dark" className="gradient-text">
     <React.StrictMode>
       <RouterProvider router={router} />
     </React.StrictMode>
   </div>
-
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-
-
