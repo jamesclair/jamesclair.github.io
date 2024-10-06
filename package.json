@@ -32,6 +32,7 @@
     "browserslist": "^4.18.1",
     "camelcase": "^6.2.1",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "concurrently": "^9.0.1",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.2.0",
     "dotenv": "^10.0.0",
@@ -81,14 +82,10 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "vite",
-    "build": "tsc && vite build",
+    "start": "concurrently \"vite\" \"vitepress dev docs\"",
+    "build": "tsc && vite build && vitepress build docs && mkdir -p dist/blog && cp -r docs/.vitepress/dist/* dist/blog",
     "serve": "vite preview",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "yarn run build && yarn run build && gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [

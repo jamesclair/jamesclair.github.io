@@ -147,7 +147,7 @@ export default function CustomizedTimeline() {
                 color: 'lightgray'
             }} position={isSmallScreen ? 'right' : 'alternate'}>
                 {careerEvents.map((careerEvent, careerIndex) => (
-                    <TimelineItem>
+                    <TimelineItem key={careerIndex}>
                         <TimelineOppositeContent
                             sx={{ m: 'auto 0' }}
                             align="right"

@@ -41,9 +41,10 @@ const router = createBrowserRouter([
     path: "/portfolio",
     element: <Portfolio />,
   },
+
   {
     path: "/blog",
-    element: <Blog />,
+    element: <ExternalRedirect to="/blog/" />,
   },
   {
     path: "/eventarchitecture",
