@@ -6,12 +6,13 @@ export default defineConfig({
   description: "Personal Documentation and Blog",
   base: '/blog',
   appearance: 'dark',
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Main Site', link: '../', target: '_self' },
-      { text: 'Portfolio', link: '../portfolio/', target: '_self' },
-      { text: 'Resume', link: '../resume/', target: '_self' },
+      { text: 'Portfolio', link: '../portfolio', target: '_self' },
+      { text: 'Resume', link: '../resume', target: '_self' },
     ],
     logo: 'favicon.ico',
 

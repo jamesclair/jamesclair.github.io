@@ -83,9 +83,9 @@
   },
   "scripts": {
     "start": "concurrently \"vite\" \"vitepress dev docs\"",
-    "build": "tsc && vite build && vitepress build docs && mkdir -p dist/blog && cp -r docs/.vitepress/dist/* dist/blog",
+    "build": "tsc && vite build && vitepress build docs && mkdir -p dist/blog && cp -r docs/.vitepress/dist/* dist/blog && cp ./dist/index.html ./dist/404.html",
     "serve": "vite preview",
-    "deploy": "yarn run build && yarn run build && gh-pages -d dist"
+    "deploy": "yarn run build && gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [

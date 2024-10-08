@@ -42,7 +42,7 @@ function Navigation() {
                                 <CustomNavLink as={Link} to="/">Home</CustomNavLink>
                                 <CustomNavLink as={Link} to="/portfolio">Portfolio</CustomNavLink>
                                 <CustomNavLink as={Link} to="/resume">Resume</CustomNavLink>
-                                <CustomNavLink as={Link} to="/blog">Blog</CustomNavLink>
+                                <CustomNavLink as={Link} to="/blog/">Blog</CustomNavLink>
                             </Nav>
                             <Nav className="ms-auto">
                                 <Nav.Link href='https://github.com/jamesclair'>

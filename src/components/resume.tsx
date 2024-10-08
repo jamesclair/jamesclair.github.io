@@ -33,7 +33,7 @@ interface job {
 var companies: company[] = [
     {
         name: "Horizon3.ai",
-        timeFrame: "Jun 2024-Present",
+        timeFrame: "Jun 2024-Oct 2024",
         jobs: [
             {
                 title: "Senior Platform Software Engineer",
